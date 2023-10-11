@@ -1,0 +1,583 @@
+[
+  {
+    "text": " Google",
+    "start": 0.14,
+    "end": 0.48,
+    "match": false,
+    "index": 0
+  },
+  {
+    "text": " Mitiga",
+    "start": 0.48,
+    "end": 0.84,
+    "match": false,
+    "index": 1
+  },
+  {
+    "text": " maior",
+    "start": 0.84,
+    "end": 1.1,
+    "match": false,
+    "index": 2
+  },
+  {
+    "text": " ataque",
+    "start": 1.1,
+    "end": 1.42,
+    "match": false,
+    "index": 3
+  },
+  {
+    "text": " de",
+    "start": 1.42,
+    "end": 1.62,
+    "match": false,
+    "index": 4
+  },
+  {
+    "text": " 2S",
+    "start": 1.62,
+    "end": 2.02,
+    "match": false,
+    "index": 5
+  },
+  {
+    "text": " histórico,",
+    "start": 2.02,
+    "end": 2.64,
+    "match": false,
+    "index": 6
+  },
+  {
+    "text": " atingindo",
+    "start": 2.64,
+    "end": 3.02,
+    "match": false,
+    "index": 7
+  },
+  {
+    "text": " pico",
+    "start": 3.02,
+    "end": 3.38,
+    "match": false,
+    "index": 8
+  },
+  {
+    "text": " de",
+    "start": 3.38,
+    "end": 3.52,
+    "match": false,
+    "index": 9
+  },
+  {
+    "text": " 398",
+    "start": 3.52,
+    "end": 4.58,
+    "match": false,
+    "index": 10
+  },
+  {
+    "text": " milhões",
+    "start": 4.58,
+    "end": 5.1,
+    "match": false,
+    "index": 11
+  },
+  {
+    "text": " de",
+    "start": 5.1,
+    "end": 5.4,
+    "match": false,
+    "index": 12
+  },
+  {
+    "text": " RPS.",
+    "start": 5.4,
+    "end": 6.32,
+    "match": false,
+    "index": 13
+  },
+  {
+    "text": " O",
+    "start": 6.36,
+    "end": 6.54,
+    "match": false,
+    "index": 14
+  },
+  {
+    "text": " ataque",
+    "start": 6.54,
+    "end": 6.8,
+    "match": false,
+    "index": 15
+  },
+  {
+    "text": " que",
+    "start": 6.8,
+    "end": 7,
+    "match": false,
+    "index": 16
+  },
+  {
+    "text": " durou",
+    "start": 7,
+    "end": 7.16,
+    "match": false,
+    "index": 17
+  },
+  {
+    "text": " 2",
+    "start": 7.16,
+    "end": 7.42,
+    "match": false,
+    "index": 18
+  },
+  {
+    "text": " minutos,",
+    "start": 7.42,
+    "end": 8.04,
+    "match": false,
+    "index": 19
+  },
+  {
+    "text": " os",
+    "start": 8.04,
+    "end": 8.26,
+    "match": false,
+    "index": 20
+  },
+  {
+    "text": " ouma",
+    "start": 8.26,
+    "end": 8.46,
+    "match": false,
+    "index": 21
+  },
+  {
+    "text": " nova",
+    "start": 8.46,
+    "end": 8.78,
+    "match": false,
+    "index": 22
+  },
+  {
+    "text": " técnica",
+    "start": 8.78,
+    "end": 9.28,
+    "match": false,
+    "index": 23
+  },
+  {
+    "text": " chamada",
+    "start": 9.28,
+    "end": 10.02,
+    "match": false,
+    "index": 24
+  },
+  {
+    "text": " HTP",
+    "start": 10.02,
+    "end": 10.9,
+    "match": false,
+    "index": 25
+  },
+  {
+    "text": " 2",
+    "start": 10.9,
+    "end": 11.56,
+    "match": false,
+    "index": 26
+  },
+  {
+    "text": " Rapid",
+    "start": 11.56,
+    "end": 11.98,
+    "match": false,
+    "index": 27
+  },
+  {
+    "text": " Re7,",
+    "start": 11.98,
+    "end": 13.02,
+    "match": false,
+    "index": 28
+  },
+  {
+    "text": " explorando",
+    "start": 13.02,
+    "end": 13.56,
+    "match": false,
+    "index": 29
+  },
+  {
+    "text": " uma",
+    "start": 13.56,
+    "end": 13.86,
+    "match": false,
+    "index": 30
+  },
+  {
+    "text": " vulnerabilidade",
+    "start": 13.86,
+    "end": 14.64,
+    "match": false,
+    "index": 31
+  },
+  {
+    "text": " no",
+    "start": 14.64,
+    "end": 14.82,
+    "match": false,
+    "index": 32
+  },
+  {
+    "text": " protocolo,",
+    "start": 14.82,
+    "end": 15.62,
+    "match": false,
+    "index": 33
+  },
+  {
+    "text": " CVL",
+    "start": 15.62,
+    "end": 16.14,
+    "match": false,
+    "index": 34
+  },
+  {
+    "text": " 2",
+    "start": 16.14,
+    "end": 16.4,
+    "match": false,
+    "index": 35
+  },
+  {
+    "text": ".234",
+    "start": 16.4,
+    "end": 17.66,
+    "match": false,
+    "index": 36
+  },
+  {
+    "text": ".447,",
+    "start": 17.66,
+    "end": 19.38,
+    "match": false,
+    "index": 37
+  },
+  {
+    "text": " e",
+    "start": 19.38,
+    "end": 19.46,
+    "match": false,
+    "index": 38
+  },
+  {
+    "text": " permitindo",
+    "start": 19.46,
+    "end": 19.8,
+    "match": false,
+    "index": 39
+  },
+  {
+    "text": " atar",
+    "start": 19.8,
+    "end": 20.16,
+    "match": false,
+    "index": 40
+  },
+  {
+    "text": " que",
+    "start": 20.16,
+    "end": 20.34,
+    "match": false,
+    "index": 41
+  },
+  {
+    "text": " os",
+    "start": 20.34,
+    "end": 20.38,
+    "match": false,
+    "index": 42
+  },
+  {
+    "text": " DDS",
+    "start": 20.38,
+    "end": 20.86,
+    "match": false,
+    "index": 43
+  },
+  {
+    "text": " e",
+    "start": 20.86,
+    "end": 21.22,
+    "match": false,
+    "index": 44
+  },
+  {
+    "text": " Pervolumetricos.",
+    "start": 21.22,
+    "end": 22.38,
+    "match": false,
+    "index": 45
+  },
+  {
+    "text": " Para",
+    "start": 22.44,
+    "end": 22.64,
+    "match": false,
+    "index": 46
+  },
+  {
+    "text": " se",
+    "start": 22.64,
+    "end": 22.76,
+    "match": false,
+    "index": 47
+  },
+  {
+    "text": " ter",
+    "start": 22.76,
+    "end": 22.9,
+    "match": false,
+    "index": 48
+  },
+  {
+    "text": " uma",
+    "start": 22.9,
+    "end": 23.06,
+    "match": false,
+    "index": 49
+  },
+  {
+    "text": " noção",
+    "start": 23.06,
+    "end": 23.36,
+    "match": false,
+    "index": 50
+  },
+  {
+    "text": " do",
+    "start": 23.36,
+    "end": 23.58,
+    "match": false,
+    "index": 51
+  },
+  {
+    "text": " tamanho",
+    "start": 23.52,
+    "end": 23.78,
+    "match": false,
+    "index": 52
+  },
+  {
+    "text": " do",
+    "start": 23.78,
+    "end": 24,
+    "match": false,
+    "index": 53
+  },
+  {
+    "text": " ataque",
+    "start": 24,
+    "end": 24.24,
+    "match": false,
+    "index": 54
+  },
+  {
+    "text": " segundo",
+    "start": 24.24,
+    "end": 24.64,
+    "match": false,
+    "index": 55
+  },
+  {
+    "text": " a",
+    "start": 24.64,
+    "end": 24.82,
+    "match": false,
+    "index": 56
+  },
+  {
+    "text": " clove",
+    "start": 24.82,
+    "end": 25.06,
+    "match": false,
+    "index": 57
+  },
+  {
+    "text": " a",
+    "start": 25.2,
+    "end": 25.28,
+    "match": false,
+    "index": 58
+  },
+  {
+    "text": " área,",
+    "start": 25.28,
+    "end": 25.82,
+    "match": false,
+    "index": 59
+  },
+  {
+    "text": " toda",
+    "start": 25.82,
+    "end": 25.92,
+    "match": false,
+    "index": 60
+  },
+  {
+    "text": " a",
+    "start": 25.92,
+    "end": 26.04,
+    "match": false,
+    "index": 61
+  },
+  {
+    "text": " web",
+    "start": 26.04,
+    "end": 26.3,
+    "match": false,
+    "index": 62
+  },
+  {
+    "text": " registra",
+    "start": 26.3,
+    "end": 26.88,
+    "match": false,
+    "index": 63
+  },
+  {
+    "text": " entre",
+    "start": 26.88,
+    "end": 27.36,
+    "match": false,
+    "index": 64
+  },
+  {
+    "text": " 1",
+    "start": 27.36,
+    "end": 27.68,
+    "match": false,
+    "index": 65
+  },
+  {
+    "text": " e",
+    "start": 27.68,
+    "end": 27.68,
+    "match": false,
+    "index": 66
+  },
+  {
+    "text": " 3",
+    "start": 27.68,
+    "end": 28.08,
+    "match": false,
+    "index": 67
+  },
+  {
+    "text": " milhões",
+    "start": 28.08,
+    "end": 28.38,
+    "match": false,
+    "index": 68
+  },
+  {
+    "text": " de",
+    "start": 28.38,
+    "end": 28.6,
+    "match": false,
+    "index": 69
+  },
+  {
+    "text": " soluções",
+    "start": 28.6,
+    "end": 29.16,
+    "match": false,
+    "index": 70
+  },
+  {
+    "text": " por",
+    "start": 29.16,
+    "end": 29.54,
+    "match": false,
+    "index": 71
+  },
+  {
+    "text": " segundo.",
+    "start": 29.54,
+    "end": 30.28,
+    "match": false,
+    "index": 72
+  },
+  {
+    "text": " As",
+    "start": 30.34,
+    "end": 30.5,
+    "match": false,
+    "index": 73
+  },
+  {
+    "text": " informações",
+    "start": 30.5,
+    "end": 30.88,
+    "match": false,
+    "index": 74
+  },
+  {
+    "text": " são",
+    "start": 30.88,
+    "end": 31.24,
+    "match": false,
+    "index": 75
+  },
+  {
+    "text": " dos",
+    "start": 31.24,
+    "end": 31.46,
+    "match": false,
+    "index": 76
+  },
+  {
+    "text": " blogs",
+    "start": 31.46,
+    "end": 31.72,
+    "match": false,
+    "index": 77
+  },
+  {
+    "text": " da",
+    "start": 31.72,
+    "end": 32,
+    "match": false,
+    "index": 78
+  },
+  {
+    "text": " CloudFlare",
+    "start": 32,
+    "end": 32.64,
+    "match": false,
+    "index": 79
+  },
+  {
+    "text": " e",
+    "start": 32.64,
+    "end": 33,
+    "match": false,
+    "index": 80
+  },
+  {
+    "text": " Google",
+    "start": 33,
+    "end": 33.22,
+    "match": false,
+    "index": 81
+  },
+  {
+    "text": " Cloud.",
+    "start": 33.22,
+    "end": 41.02,
+    "match": false,
+    "index": 82
+  }
+]

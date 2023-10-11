@@ -6,7 +6,12 @@
  */
 
 import {Config} from '@remotion/cli/config';
-import {webpackOverride} from './src/webpack-override';
+import {enableTailwind} from '@remotion/tailwind';
+import {WebpackOverrideFn} from '@remotion/bundler';
+
+export const webpackOverride: WebpackOverrideFn = (currentConfiguration) => {
+	return enableTailwind(currentConfiguration);
+};
 
 Config.setVideoImageFormat('jpeg');
 Config.setOverwriteOutput(true);

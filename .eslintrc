@@ -2,5 +2,13 @@
 	"extends": "@remotion",
 	"env": {
 		"node": true
-	}
+	},
+    "rules": {
+        "no-console": "off",
+        "camelcase": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "guard-for-in": "off",
+        "radix": "off",
+        "capitalized-comments": "off",
+    }
 }
