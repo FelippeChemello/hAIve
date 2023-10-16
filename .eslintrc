@@ -10,5 +10,6 @@
         "guard-for-in": "off",
         "radix": "off",
         "capitalized-comments": "off",
+        "@remotion/deterministic-randomness": "off",
     }
 }

@@ -1,0 +1,2233 @@
+{
+  "videoTitle": "Amazon's Bold Step into Space: The First Internet Satellite Prototypes!",
+  "keywords": [
+    "Amazon",
+    "satellite",
+    "Project Kuiper",
+    "internet",
+    "space",
+    "Protoflight",
+    "Starlink",
+    "SpaceX"
+  ],
+  "script": [
+    {
+      "text": "Você já imaginou ter acesso à internet de qualquer lugar do mundo através de satélites?",
+      "type": "INTRO",
+      "image": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/images/1.jpg"
+      },
+      "audioDuration": 4.85875,
+      "audio": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/audio/1.mp3"
+      },
+      "speechTimestamp": [
+        {
+          "text": "Você",
+          "start": 0,
+          "end": 0.25
+        },
+        {
+          "text": "já",
+          "start": 0.26,
+          "end": 0.38
+        },
+        {
+          "text": "imaginou",
+          "start": 0.39,
+          "end": 0.9
+        },
+        {
+          "text": "ter",
+          "start": 0.91,
+          "end": 1.09
+        },
+        {
+          "text": "acesso",
+          "start": 1.1,
+          "end": 1.48
+        },
+        {
+          "text": "à",
+          "start": 1.48,
+          "end": 1.7
+        },
+        {
+          "text": "internet",
+          "start": 1.7,
+          "end": 2.12
+        },
+        {
+          "text": "de",
+          "start": 2.12,
+          "end": 2.38
+        },
+        {
+          "text": "qualquer",
+          "start": 2.38,
+          "end": 2.66
+        },
+        {
+          "text": "lugar",
+          "start": 2.66,
+          "end": 2.94
+        },
+        {
+          "text": "do",
+          "start": 2.94,
+          "end": 3.1
+        },
+        {
+          "text": "mundo",
+          "start": 3.1,
+          "end": 3.3
+        },
+        {
+          "text": "através",
+          "start": 3.3,
+          "end": 3.76
+        },
+        {
+          "text": "de",
+          "start": 3.76,
+          "end": 4
+        },
+        {
+          "text": "satélites?",
+          "start": 4,
+          "end": 9.68
+        }
+      ],
+      "animation": "ZOOM_OUT"
+    },
+    {
+      "text": "Bem, a Amazon está transformando esse sonho em realidade!",
+      "type": "INTRO",
+      "image": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/images/2.jpg"
+      },
+      "audioDuration": 4.414688,
+      "audio": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/audio/2.mp3"
+      },
+      "speechTimestamp": [
+        {
+          "text": "Bem,",
+          "start": 0,
+          "end": 0.31
+        },
+        {
+          "text": "a",
+          "start": 0.32,
+          "end": 0.39
+        },
+        {
+          "text": "Amazon",
+          "start": 0.4,
+          "end": 0.87
+        },
+        {
+          "text": "está",
+          "start": 0.88,
+          "end": 1.18
+        },
+        {
+          "text": "transformando",
+          "start": 1.19,
+          "end": 2.22
+        },
+        {
+          "text": "esse",
+          "start": 2.22,
+          "end": 2.54
+        },
+        {
+          "text": "sonho",
+          "start": 2.54,
+          "end": 2.9
+        },
+        {
+          "text": "em",
+          "start": 2.9,
+          "end": 3.42
+        },
+        {
+          "text": "realidade!",
+          "start": 3.42,
+          "end": 8.8
+        }
+      ],
+      "animation": "ZOOM_IN"
+    },
+    {
+      "text": "Há mais de quatro anos, a Amazon anunciou seu ambicioso projeto Kuiper.",
+      "type": "CONTENT",
+      "image": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/images/3.jpg"
+      },
+      "audioDuration": 4.832625,
+      "audio": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/audio/3.mp3"
+      },
+      "speechTimestamp": [
+        {
+          "text": "Há",
+          "start": 0,
+          "end": 0
+        },
+        {
+          "text": "mais",
+          "start": 0,
+          "end": 0
+        },
+        {
+          "text": "de",
+          "start": 0,
+          "end": 0
+        },
+        {
+          "text": "quatro",
+          "start": 0,
+          "end": 0
+        },
+        {
+          "text": "anos,",
+          "start": 0,
+          "end": 0
+        },
+        {
+          "text": "a",
+          "start": 0,
+          "end": 0.4
+        },
+        {
+          "text": "Amazon",
+          "start": 0.4,
+          "end": 2.27
+        },
+        {
+          "text": "anunciou",
+          "start": 2.28,
+          "end": 2.76
+        },
+        {
+          "text": "seu",
+          "start": 2.76,
+          "end": 3.06
+        },
+        {
+          "text": "ambicioso",
+          "start": 3.06,
+          "end": 3.58
+        },
+        {
+          "text": "projeto",
+          "start": 3.58,
+          "end": 4.12
+        },
+        {
+          "text": "Kuiper.",
+          "start": 4.12,
+          "end": 9.64
+        }
+      ],
+      "animation": "ZOOM_OUT"
+    },
+    {
+      "text": "E na sexta-feira, lançou os primeiros protótipos de satélite deste projeto ao espaço.",
+      "type": "CONTENT",
+      "image": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/images/4.jpg"
+      },
+      "audioDuration": 5.250563,
+      "audio": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/audio/4.mp3"
+      },
+      "speechTimestamp": [
+        {
+          "text": "E",
+          "start": 0,
+          "end": 0.07
+        },
+        {
+          "text": "na",
+          "start": 0.08,
+          "end": 0.22
+        },
+        {
+          "text": "sexta-feira,",
+          "start": 0.23,
+          "end": 1.1
+        },
+        {
+          "text": "lançou",
+          "start": 1.11,
+          "end": 1.55
+        },
+        {
+          "text": "os",
+          "start": 1.56,
+          "end": 1.7
+        },
+        {
+          "text": "primeiros",
+          "start": 1.7,
+          "end": 2.04
+        },
+        {
+          "text": "protótipos",
+          "start": 2.04,
+          "end": 2.68
+        },
+        {
+          "text": "de",
+          "start": 2.68,
+          "end": 2.9
+        },
+        {
+          "text": "satélite",
+          "start": 2.9,
+          "end": 3.4
+        },
+        {
+          "text": "deste",
+          "start": 3.4,
+          "end": 3.74
+        },
+        {
+          "text": "projeto",
+          "start": 3.74,
+          "end": 4.12
+        },
+        {
+          "text": "ao",
+          "start": 4.12,
+          "end": 4.42
+        },
+        {
+          "text": "espaço.",
+          "start": 4.42,
+          "end": 10.48
+        }
+      ],
+      "animation": "ZOOM_IN"
+    },
+    {
+      "text": "O vice-presidente de tecnologia do Projeto Kuiper, Rajeev Badyal, expressou grande confiança no design dos satélites.",
+      "type": "CONTENT",
+      "image": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/images/5.jpg"
+      },
+      "audioDuration": 7.836688,
+      "audio": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/audio/5.mp3"
+      },
+      "speechTimestamp": [
+        {
+          "text": "O",
+          "start": 0,
+          "end": 0.07
+        },
+        {
+          "text": "vice-presidente",
+          "start": 0.08,
+          "end": 1.12
+        },
+        {
+          "text": "de",
+          "start": 1.13,
+          "end": 1.26
+        },
+        {
+          "text": "tecnologia",
+          "start": 1.27,
+          "end": 1.96
+        },
+        {
+          "text": "do",
+          "start": 1.97,
+          "end": 2.1
+        },
+        {
+          "text": "Projeto",
+          "start": 2.1,
+          "end": 2.52
+        },
+        {
+          "text": "Kuiper,",
+          "start": 2.52,
+          "end": 3.06
+        },
+        {
+          "text": "Rajeev",
+          "start": 3.07,
+          "end": 3.52
+        },
+        {
+          "text": "Badyal,",
+          "start": 3.53,
+          "end": 4.06
+        },
+        {
+          "text": "expressou",
+          "start": 4.07,
+          "end": 4.76
+        },
+        {
+          "text": "grande",
+          "start": 4.77,
+          "end": 5.22
+        },
+        {
+          "text": "confiança",
+          "start": 5.23,
+          "end": 5.92
+        },
+        {
+          "text": "no",
+          "start": 5.92,
+          "end": 6.28
+        },
+        {
+          "text": "design",
+          "start": 6.28,
+          "end": 6.66
+        },
+        {
+          "text": "dos",
+          "start": 6.66,
+          "end": 6.94
+        },
+        {
+          "text": "satélites.",
+          "start": 6.95,
+          "end": 7.88
+        }
+      ],
+      "animation": "ZOOM_OUT"
+    },
+    {
+      "text": "O objetivo? Construir uma rede de 3.236 satélites em órbita terrestre baixa para fornecer acesso à internet de alta velocidade globalmente.",
+      "type": "CONTENT",
+      "image": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/images/6.jpg"
+      },
+      "audioDuration": 12.53875,
+      "audio": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/audio/6.mp3"
+      },
+      "speechTimestamp": [
+        {
+          "text": "O",
+          "start": 0,
+          "end": 0.11
+        },
+        {
+          "text": "objetivo?",
+          "start": 0.12,
+          "end": 1.13
+        },
+        {
+          "text": "Construir",
+          "start": 1.14,
+          "end": 2.14
+        },
+        {
+          "text": "uma",
+          "start": 2.15,
+          "end": 2.48
+        },
+        {
+          "text": "rede",
+          "start": 2.49,
+          "end": 2.94
+        },
+        {
+          "text": "de",
+          "start": 2.94,
+          "end": 3.3
+        },
+        {
+          "text": "3.236",
+          "start": 3.3,
+          "end": 4.27
+        },
+        {
+          "text": "satélites",
+          "start": 4.28,
+          "end": 6.04
+        },
+        {
+          "text": "em",
+          "start": 6.04,
+          "end": 6.26
+        },
+        {
+          "text": "órbita",
+          "start": 6.26,
+          "end": 6.56
+        },
+        {
+          "text": "terrestre",
+          "start": 6.56,
+          "end": 7.42
+        },
+        {
+          "text": "baixa",
+          "start": 7.43,
+          "end": 7.9
+        },
+        {
+          "text": "para",
+          "start": 7.9,
+          "end": 8.26
+        },
+        {
+          "text": "fornecer",
+          "start": 8.26,
+          "end": 8.7
+        },
+        {
+          "text": "acesso",
+          "start": 8.7,
+          "end": 9.18
+        },
+        {
+          "text": "à",
+          "start": 9.18,
+          "end": 9.48
+        },
+        {
+          "text": "internet",
+          "start": 9.48,
+          "end": 9.98
+        },
+        {
+          "text": "de",
+          "start": 10.32,
+          "end": 10.58
+        },
+        {
+          "text": "alta",
+          "start": 10.58,
+          "end": 10.58
+        },
+        {
+          "text": "velocidade",
+          "start": 10.58,
+          "end": 11.12
+        },
+        {
+          "text": "globalmente.",
+          "start": 11.12,
+          "end": 19.86
+        }
+      ],
+      "animation": "ZOOM_IN"
+    },
+    {
+      "text": "A empresa planeja investir mais de $10 bilhões neste projeto e já iniciou as obras de uma instalação de processamento pré-lançamento na Flórida.",
+      "type": "CONTENT",
+      "image": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/images/7.jpg"
+      },
+      "audioDuration": 9.613062,
+      "audio": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/audio/7.mp3"
+      },
+      "speechTimestamp": [
+        {
+          "text": "A",
+          "start": 0,
+          "end": 0.06
+        },
+        {
+          "text": "empresa",
+          "start": 0.07,
+          "end": 0.55
+        },
+        {
+          "text": "planeja",
+          "start": 0.56,
+          "end": 1.03
+        },
+        {
+          "text": "investir",
+          "start": 1.04,
+          "end": 1.58
+        },
+        {
+          "text": "mais",
+          "start": 1.59,
+          "end": 1.86
+        },
+        {
+          "text": "de",
+          "start": 1.86,
+          "end": 2.08
+        },
+        {
+          "text": "$10",
+          "start": 2.08,
+          "end": 2.4
+        },
+        {
+          "text": "bilhões",
+          "start": 2.4,
+          "end": 2.82
+        },
+        {
+          "text": "neste",
+          "start": 3.38,
+          "end": 3.76
+        },
+        {
+          "text": "projeto",
+          "start": 3.76,
+          "end": 4.64
+        },
+        {
+          "text": "e",
+          "start": 4.74,
+          "end": 4.9
+        },
+        {
+          "text": "já",
+          "start": 4.9,
+          "end": 5.04
+        },
+        {
+          "text": "iniciou",
+          "start": 5.04,
+          "end": 5.4
+        },
+        {
+          "text": "as",
+          "start": 5.4,
+          "end": 5.64
+        },
+        {
+          "text": "obras",
+          "start": 5.64,
+          "end": 5.86
+        },
+        {
+          "text": "de",
+          "start": 5.86,
+          "end": 6.1
+        },
+        {
+          "text": "uma",
+          "start": 6.1,
+          "end": 6.22
+        },
+        {
+          "text": "instalação",
+          "start": 6.22,
+          "end": 6.82
+        },
+        {
+          "text": "de",
+          "start": 5.86,
+          "end": 6.1
+        },
+        {
+          "text": "processamento",
+          "start": 7.08,
+          "end": 7.8
+        },
+        {
+          "text": "pré-lançamento",
+          "start": 7.8,
+          "end": 8.61
+        },
+        {
+          "text": "na",
+          "start": 8.62,
+          "end": 8.88
+        },
+        {
+          "text": "Flórida.",
+          "start": 8.88,
+          "end": 15.38
+        }
+      ],
+      "animation": "ZOOM_OUT"
+    },
+    {
+      "text": "O lançamento de sexta-feira foi apelidado de “Protoflight” e utilizou o foguete Atlas V da United Launch Alliance.",
+      "type": "CONTENT",
+      "image": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/images/8.jpg"
+      },
+      "audioDuration": 7.601625,
+      "audio": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/audio/8.mp3"
+      },
+      "speechTimestamp": [
+        {
+          "text": "O",
+          "start": 0,
+          "end": 0.01
+        },
+        {
+          "text": "lançamento",
+          "start": 0.02,
+          "end": 0.18
+        },
+        {
+          "text": "de",
+          "start": 0.19,
+          "end": 0.22
+        },
+        {
+          "text": "sexta-feira",
+          "start": 0.23,
+          "end": 0.41
+        },
+        {
+          "text": "foi",
+          "start": 0.42,
+          "end": 0.46
+        },
+        {
+          "text": "apelidado",
+          "start": 0.47,
+          "end": 0.62
+        },
+        {
+          "text": "de",
+          "start": 0.62,
+          "end": 0.82
+        },
+        {
+          "text": "“Protoflight”",
+          "start": 0.82,
+          "end": 3.46
+        },
+        {
+          "text": "e",
+          "start": 3.46,
+          "end": 3.52
+        },
+        {
+          "text": "utilizou",
+          "start": 3.52,
+          "end": 3.94
+        },
+        {
+          "text": "o",
+          "start": 3.94,
+          "end": 4.12
+        },
+        {
+          "text": "foguete",
+          "start": 4.12,
+          "end": 4.62
+        },
+        {
+          "text": "Atlas",
+          "start": 4.62,
+          "end": 5.06
+        },
+        {
+          "text": "V",
+          "start": 5.06,
+          "end": 5.6
+        },
+        {
+          "text": "da",
+          "start": 5.6,
+          "end": 5.82
+        },
+        {
+          "text": "United",
+          "start": 5.82,
+          "end": 6.24
+        },
+        {
+          "text": "Launch",
+          "start": 6.24,
+          "end": 6.68
+        },
+        {
+          "text": "Alliance.",
+          "start": 6.68,
+          "end": 14.54
+        }
+      ],
+      "animation": "ZOOM_IN"
+    },
+    {
+      "text": "Após algumas mudanças de planos, a Amazon decidiu usar o Atlas V, mostrando sua adaptabilidade.",
+      "type": "CONTENT",
+      "image": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/images/9.jpg"
+      },
+      "audioDuration": 7.340375,
+      "audio": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/audio/9.mp3"
+      },
+      "speechTimestamp": [
+        {
+          "text": "Após",
+          "start": 0,
+          "end": 0.31
+        },
+        {
+          "text": "algumas",
+          "start": 0.32,
+          "end": 0.87
+        },
+        {
+          "text": "mudanças",
+          "start": 0.88,
+          "end": 1.51
+        },
+        {
+          "text": "de",
+          "start": 1.52,
+          "end": 1.67
+        },
+        {
+          "text": "planos,",
+          "start": 1.67,
+          "end": 2.22
+        },
+        {
+          "text": "a",
+          "start": 2.23,
+          "end": 2.3
+        },
+        {
+          "text": "Amazon",
+          "start": 2.31,
+          "end": 2.78
+        },
+        {
+          "text": "decidiu",
+          "start": 2.79,
+          "end": 3.34
+        },
+        {
+          "text": "usar",
+          "start": 3.34,
+          "end": 3.8
+        },
+        {
+          "text": "o",
+          "start": 3.8,
+          "end": 4
+        },
+        {
+          "text": "Atlas",
+          "start": 4,
+          "end": 4.28
+        },
+        {
+          "text": "V,",
+          "start": 4.28,
+          "end": 5.06
+        },
+        {
+          "text": "mostrando",
+          "start": 5.06,
+          "end": 5.48
+        },
+        {
+          "text": "sua",
+          "start": 5.48,
+          "end": 6
+        },
+        {
+          "text": "adaptabilidade.",
+          "start": 6,
+          "end": 12.84
+        }
+      ],
+      "animation": "ZOOM_OUT"
+    },
+    {
+      "text": "A informação sobre o design dos satélites da Amazon tem sido limitada, mantendo um ar de mistério sobre o projeto.",
+      "type": "CONTENT",
+      "image": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/images/10.jpg"
+      },
+      "audioDuration": 7.758312,
+      "audio": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/audio/10.mp3"
+      },
+      "speechTimestamp": [
+        {
+          "text": "A",
+          "start": 0,
+          "end": 0.07
+        },
+        {
+          "text": "informação",
+          "start": 0.08,
+          "end": 0.79
+        },
+        {
+          "text": "sobre",
+          "start": 0.8,
+          "end": 1.15
+        },
+        {
+          "text": "o",
+          "start": 1.16,
+          "end": 1.22
+        },
+        {
+          "text": "design",
+          "start": 1.23,
+          "end": 1.65
+        },
+        {
+          "text": "dos",
+          "start": 1.66,
+          "end": 2
+        },
+        {
+          "text": "satélites",
+          "start": 2,
+          "end": 2.64
+        },
+        {
+          "text": "da",
+          "start": 2.64,
+          "end": 2.94
+        },
+        {
+          "text": "Amazon",
+          "start": 2.94,
+          "end": 3.26
+        },
+        {
+          "text": "tem",
+          "start": 3.26,
+          "end": 3.82
+        },
+        {
+          "text": "sido",
+          "start": 3.82,
+          "end": 4.06
+        },
+        {
+          "text": "limitada,",
+          "start": 4.06,
+          "end": 4.8
+        },
+        {
+          "text": "mantendo",
+          "start": 4.8,
+          "end": 5.4
+        },
+        {
+          "text": "um",
+          "start": 5.4,
+          "end": 5.68
+        },
+        {
+          "text": "ar",
+          "start": 5.68,
+          "end": 5.8
+        },
+        {
+          "text": "de",
+          "start": 5.81,
+          "end": 5.92
+        },
+        {
+          "text": "mistério",
+          "start": 5.93,
+          "end": 6.42
+        },
+        {
+          "text": "sobre",
+          "start": 6.42,
+          "end": 6.84
+        },
+        {
+          "text": "o",
+          "start": 6.84,
+          "end": 6.96
+        },
+        {
+          "text": "projeto.",
+          "start": 6.96,
+          "end": 15.38
+        }
+      ],
+      "animation": "ZOOM_IN"
+    },
+    {
+      "text": "No entanto, o que sabemos é que a Amazon assinou contratos de lançamento no valor de $7,4 bilhões para os próximos cinco anos.",
+      "type": "CONTENT",
+      "image": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/images/11.jpg"
+      },
+      "audioDuration": 9.560812,
+      "audio": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/audio/11.mp3"
+      },
+      "speechTimestamp": [
+        {
+          "text": "No",
+          "start": 0,
+          "end": 0.13
+        },
+        {
+          "text": "entanto,",
+          "start": 0.14,
+          "end": 0.65
+        },
+        {
+          "text": "o",
+          "start": 0.66,
+          "end": 0.71
+        },
+        {
+          "text": "que",
+          "start": 0.72,
+          "end": 0.91
+        },
+        {
+          "text": "sabemos",
+          "start": 0.92,
+          "end": 1.37
+        },
+        {
+          "text": "é",
+          "start": 1.38,
+          "end": 1.43
+        },
+        {
+          "text": "que",
+          "start": 1.44,
+          "end": 1.84
+        },
+        {
+          "text": "a",
+          "start": 1.84,
+          "end": 1.93
+        },
+        {
+          "text": "Amazon",
+          "start": 1.94,
+          "end": 2.48
+        },
+        {
+          "text": "assinou",
+          "start": 2.48,
+          "end": 2.84
+        },
+        {
+          "text": "contratos",
+          "start": 2.84,
+          "end": 3.52
+        },
+        {
+          "text": "de",
+          "start": 3.52,
+          "end": 3.66
+        },
+        {
+          "text": "lançamento",
+          "start": 3.66,
+          "end": 4.26
+        },
+        {
+          "text": "no",
+          "start": 4.26,
+          "end": 4.46
+        },
+        {
+          "text": "valor",
+          "start": 4.46,
+          "end": 4.8
+        },
+        {
+          "text": "de",
+          "start": 3.52,
+          "end": 3.66
+        },
+        {
+          "text": "$7,4",
+          "start": 3.66,
+          "end": 6.22
+        },
+        {
+          "text": "bilhões",
+          "start": 6.22,
+          "end": 6.7
+        },
+        {
+          "text": "para",
+          "start": 7.7,
+          "end": 7.9
+        },
+        {
+          "text": "os",
+          "start": 7.9,
+          "end": 8.08
+        },
+        {
+          "text": "próximos",
+          "start": 8.08,
+          "end": 8.52
+        },
+        {
+          "text": "cinco",
+          "start": 8.52,
+          "end": 8.98
+        },
+        {
+          "text": "anos.",
+          "start": 8.98,
+          "end": 15.92
+        }
+      ],
+      "animation": "ZOOM_OUT"
+    },
+    {
+      "text": "Isso inclui 77 lançamentos, com opções para mais quando necessário, para cumprir os requisitos regulamentares.",
+      "type": "CONTENT",
+      "image": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/images/12.jpg"
+      },
+      "audioDuration": 7.3665,
+      "audio": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/audio/12.mp3"
+      },
+      "speechTimestamp": [
+        {
+          "text": "Isso",
+          "start": 0,
+          "end": 0.42
+        },
+        {
+          "text": "inclui",
+          "start": 0.43,
+          "end": 1.05
+        },
+        {
+          "text": "77",
+          "start": 1.06,
+          "end": 1.27
+        },
+        {
+          "text": "lançamentos,",
+          "start": 1.28,
+          "end": 2.54
+        },
+        {
+          "text": "com",
+          "start": 2.55,
+          "end": 2.86
+        },
+        {
+          "text": "opções",
+          "start": 2.86,
+          "end": 3.24
+        },
+        {
+          "text": "para",
+          "start": 3.24,
+          "end": 3.52
+        },
+        {
+          "text": "mais",
+          "start": 3.52,
+          "end": 3.78
+        },
+        {
+          "text": "quando",
+          "start": 3.78,
+          "end": 4
+        },
+        {
+          "text": "necessário,",
+          "start": 4,
+          "end": 4.62
+        },
+        {
+          "text": "para",
+          "start": 3.24,
+          "end": 3.52
+        },
+        {
+          "text": "cumprir",
+          "start": 3.52,
+          "end": 5.4
+        },
+        {
+          "text": "os",
+          "start": 5.4,
+          "end": 5.58
+        },
+        {
+          "text": "requisitos",
+          "start": 5.58,
+          "end": 6.12
+        },
+        {
+          "text": "regulamentares.",
+          "start": 6.12,
+          "end": 13.02
+        }
+      ],
+      "animation": "ZOOM_IN"
+    },
+    {
+      "text": "Esses acordos, no entanto, enfrentaram críticas e até mesmo processos de acionistas da Amazon.",
+      "type": "CONTENT",
+      "image": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/images/13.jpg"
+      },
+      "audioDuration": 6.164875,
+      "audio": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/audio/13.mp3"
+      },
+      "speechTimestamp": [
+        {
+          "text": "Esses",
+          "start": 0,
+          "end": 0.34
+        },
+        {
+          "text": "acordos,",
+          "start": 0.35,
+          "end": 0.9
+        },
+        {
+          "text": "no",
+          "start": 0.91,
+          "end": 1.04
+        },
+        {
+          "text": "entanto,",
+          "start": 1.05,
+          "end": 1.59
+        },
+        {
+          "text": "enfrentaram",
+          "start": 1.6,
+          "end": 2.36
+        },
+        {
+          "text": "críticas",
+          "start": 2.36,
+          "end": 3.02
+        },
+        {
+          "text": "e",
+          "start": 3.02,
+          "end": 3.24
+        },
+        {
+          "text": "até",
+          "start": 3.24,
+          "end": 3.44
+        },
+        {
+          "text": "mesmo",
+          "start": 3.44,
+          "end": 3.72
+        },
+        {
+          "text": "processos",
+          "start": 3.72,
+          "end": 4.48
+        },
+        {
+          "text": "de",
+          "start": 4.48,
+          "end": 4.66
+        },
+        {
+          "text": "acionistas",
+          "start": 4.66,
+          "end": 5.18
+        },
+        {
+          "text": "da",
+          "start": 5.18,
+          "end": 5.54
+        },
+        {
+          "text": "Amazon.",
+          "start": 5.54,
+          "end": 12.26
+        }
+      ],
+      "animation": "ZOOM_OUT"
+    },
+    {
+      "text": "Enquanto a Amazon está dando seus primeiros passos, a SpaceX já atende mais de 2 milhões de clientes com seu serviço Starlink.",
+      "type": "CONTENT",
+      "image": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/images/14.jpg"
+      },
+      "audioDuration": 8.620375,
+      "audio": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/audio/14.mp3"
+      },
+      "speechTimestamp": [
+        {
+          "text": "Enquanto",
+          "start": 0,
+          "end": 0.58
+        },
+        {
+          "text": "a",
+          "start": 0.59,
+          "end": 0.66
+        },
+        {
+          "text": "Amazon",
+          "start": 0.66,
+          "end": 1.1
+        },
+        {
+          "text": "está",
+          "start": 1.11,
+          "end": 1.39
+        },
+        {
+          "text": "dando",
+          "start": 1.4,
+          "end": 1.76
+        },
+        {
+          "text": "seus",
+          "start": 1.76,
+          "end": 1.82
+        },
+        {
+          "text": "primeiros",
+          "start": 1.82,
+          "end": 2.22
+        },
+        {
+          "text": "passos,",
+          "start": 2.22,
+          "end": 3.14
+        },
+        {
+          "text": "a",
+          "start": 3.14,
+          "end": 3.24
+        },
+        {
+          "text": "SpaceX",
+          "start": 3.24,
+          "end": 3.9
+        },
+        {
+          "text": "já",
+          "start": 3.9,
+          "end": 4.46
+        },
+        {
+          "text": "atende",
+          "start": 4.46,
+          "end": 4.82
+        },
+        {
+          "text": "mais",
+          "start": 4.82,
+          "end": 5
+        },
+        {
+          "text": "de",
+          "start": 4.64,
+          "end": 4.82
+        },
+        {
+          "text": "2",
+          "start": 5.16,
+          "end": 5.44
+        },
+        {
+          "text": "milhões",
+          "start": 5.44,
+          "end": 5.74
+        },
+        {
+          "text": "de",
+          "start": 4.64,
+          "end": 4.82
+        },
+        {
+          "text": "clientes",
+          "start": 5.94,
+          "end": 6.36
+        },
+        {
+          "text": "com",
+          "start": 6.36,
+          "end": 6.62
+        },
+        {
+          "text": "seu",
+          "start": 6.62,
+          "end": 6.78
+        },
+        {
+          "text": "serviço",
+          "start": 6.78,
+          "end": 7.48
+        },
+        {
+          "text": "Starlink.",
+          "start": 7.48,
+          "end": 14.54
+        }
+      ],
+      "animation": "ZOOM_IN"
+    },
+    {
+      "text": "Mas a Amazon está determinada! A empresa planeja lançar seus primeiros satélites de produção Kuiper no próximo ano.",
+      "type": "CONTENT",
+      "image": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/images/15.jpg"
+      },
+      "audioDuration": 7.706062,
+      "audio": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/audio/15.mp3"
+      },
+      "speechTimestamp": [
+        {
+          "text": "Mas",
+          "start": 0,
+          "end": 0.04
+        },
+        {
+          "text": "a",
+          "start": 0.05,
+          "end": 0.06
+        },
+        {
+          "text": "Amazon",
+          "start": 0.07,
+          "end": 0.15
+        },
+        {
+          "text": "está",
+          "start": 0.16,
+          "end": 0.21
+        },
+        {
+          "text": "determinada!",
+          "start": 0.22,
+          "end": 0.4
+        },
+        {
+          "text": "A",
+          "start": 0.4,
+          "end": 0.8
+        },
+        {
+          "text": "empresa",
+          "start": 2.92,
+          "end": 3.22
+        },
+        {
+          "text": "planeja",
+          "start": 3.22,
+          "end": 3.6
+        },
+        {
+          "text": "lançar",
+          "start": 3.6,
+          "end": 4.06
+        },
+        {
+          "text": "seus",
+          "start": 4.06,
+          "end": 4.36
+        },
+        {
+          "text": "primeiros",
+          "start": 4.36,
+          "end": 4.74
+        },
+        {
+          "text": "satélites",
+          "start": 4.74,
+          "end": 5.28
+        },
+        {
+          "text": "de",
+          "start": 5.28,
+          "end": 5.58
+        },
+        {
+          "text": "produção",
+          "start": 5.58,
+          "end": 5.98
+        },
+        {
+          "text": "Kuiper",
+          "start": 5.98,
+          "end": 6.52
+        },
+        {
+          "text": "no",
+          "start": 6.52,
+          "end": 6.7
+        },
+        {
+          "text": "próximo",
+          "start": 6.7,
+          "end": 7.08
+        },
+        {
+          "text": "ano.",
+          "start": 7.08,
+          "end": 14.84
+        }
+      ],
+      "animation": "ZOOM_OUT"
+    },
+    {
+      "text": "E tem planos de iniciar os testes beta da rede com clientes até o final de 2024.",
+      "type": "CONTENT",
+      "image": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/images/16.jpg"
+      },
+      "audioDuration": 5.694687,
+      "audio": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/audio/16.mp3"
+      },
+      "speechTimestamp": [
+        {
+          "text": "E",
+          "start": 0,
+          "end": 0.07
+        },
+        {
+          "text": "tem",
+          "start": 0.08,
+          "end": 0.29
+        },
+        {
+          "text": "planos",
+          "start": 0.3,
+          "end": 0.72
+        },
+        {
+          "text": "de",
+          "start": 0.73,
+          "end": 0.87
+        },
+        {
+          "text": "iniciar",
+          "start": 0.88,
+          "end": 1.38
+        },
+        {
+          "text": "os",
+          "start": 1.38,
+          "end": 1.58
+        },
+        {
+          "text": "testes",
+          "start": 1.58,
+          "end": 2.08
+        },
+        {
+          "text": "beta",
+          "start": 2.08,
+          "end": 2.3
+        },
+        {
+          "text": "da",
+          "start": 2.3,
+          "end": 2.56
+        },
+        {
+          "text": "rede",
+          "start": 2.56,
+          "end": 2.76
+        },
+        {
+          "text": "com",
+          "start": 2.76,
+          "end": 3
+        },
+        {
+          "text": "clientes",
+          "start": 3,
+          "end": 3.54
+        },
+        {
+          "text": "até",
+          "start": 3.54,
+          "end": 3.9
+        },
+        {
+          "text": "o",
+          "start": 3.9,
+          "end": 3.96
+        },
+        {
+          "text": "final",
+          "start": 3.96,
+          "end": 4.24
+        },
+        {
+          "text": "de",
+          "start": 4.24,
+          "end": 4.52
+        },
+        {
+          "text": "2024.",
+          "start": 4.52,
+          "end": 11.36
+        }
+      ],
+      "animation": "ZOOM_IN"
+    },
+    {
+      "text": "Este lançamento representa um teste “de ponta a ponta” do Kuiper.",
+      "type": "CONTENT",
+      "image": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/images/17.jpg"
+      },
+      "audioDuration": 4.362437,
+      "audio": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/audio/17.mp3"
+      },
+      "speechTimestamp": [
+        {
+          "text": "Este",
+          "start": 0,
+          "end": 0.3
+        },
+        {
+          "text": "lançamento",
+          "start": 0.31,
+          "end": 1.05
+        },
+        {
+          "text": "representa",
+          "start": 1.06,
+          "end": 1.8
+        },
+        {
+          "text": "um",
+          "start": 1.81,
+          "end": 1.95
+        },
+        {
+          "text": "teste",
+          "start": 1.96,
+          "end": 2.33
+        },
+        {
+          "text": "“de",
+          "start": 2.34,
+          "end": 2.56
+        },
+        {
+          "text": "ponta",
+          "start": 2.56,
+          "end": 3
+        },
+        {
+          "text": "a",
+          "start": 3,
+          "end": 3.1
+        },
+        {
+          "text": "ponta”",
+          "start": 3.1,
+          "end": 3.42
+        },
+        {
+          "text": "do",
+          "start": 3.42,
+          "end": 3.64
+        },
+        {
+          "text": "Kuiper.",
+          "start": 3.64,
+          "end": 8.69
+        }
+      ],
+      "animation": "ZOOM_OUT"
+    },
+    {
+      "text": "O principal objetivo é verificar se os satélites protótipo podem se conectar às antenas terrestres.",
+      "type": "CONTENT",
+      "image": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/images/18.jpg"
+      },
+      "audioDuration": 7.41875,
+      "audio": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/audio/18.mp3"
+      },
+      "speechTimestamp": [
+        {
+          "text": "O",
+          "start": 0,
+          "end": 0.08
+        },
+        {
+          "text": "principal",
+          "start": 0.09,
+          "end": 0.8
+        },
+        {
+          "text": "objetivo",
+          "start": 0.81,
+          "end": 1.45
+        },
+        {
+          "text": "é",
+          "start": 1.46,
+          "end": 1.53
+        },
+        {
+          "text": "verificar",
+          "start": 1.54,
+          "end": 2.25
+        },
+        {
+          "text": "se",
+          "start": 2.26,
+          "end": 2.5
+        },
+        {
+          "text": "os",
+          "start": 2.5,
+          "end": 2.6
+        },
+        {
+          "text": "satélites",
+          "start": 2.6,
+          "end": 3.38
+        },
+        {
+          "text": "protótipo",
+          "start": 3.38,
+          "end": 4.24
+        },
+        {
+          "text": "podem",
+          "start": 4.24,
+          "end": 4.52
+        },
+        {
+          "text": "se",
+          "start": 2.26,
+          "end": 2.5
+        },
+        {
+          "text": "conectar",
+          "start": 4.84,
+          "end": 5.52
+        },
+        {
+          "text": "às",
+          "start": 5.52,
+          "end": 5.86
+        },
+        {
+          "text": "antenas",
+          "start": 5.86,
+          "end": 6.38
+        },
+        {
+          "text": "terrestres.",
+          "start": 6.38,
+          "end": 14.54
+        }
+      ],
+      "animation": "ZOOM_IN"
+    },
+    {
+      "text": "Recentemente, a Amazon revelou três antenas de satélite que planeja vender aos clientes Kuiper.",
+      "type": "CONTENT",
+      "image": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/images/19.jpg"
+      },
+      "audioDuration": 6.948562,
+      "audio": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/audio/19.mp3"
+      },
+      "speechTimestamp": [
+        {
+          "text": "Recentemente,",
+          "start": 0,
+          "end": 1.19
+        },
+        {
+          "text": "a",
+          "start": 1.2,
+          "end": 1.28
+        },
+        {
+          "text": "Amazon",
+          "start": 1.29,
+          "end": 1.83
+        },
+        {
+          "text": "revelou",
+          "start": 1.84,
+          "end": 2.47
+        },
+        {
+          "text": "três",
+          "start": 2.48,
+          "end": 2.84
+        },
+        {
+          "text": "antenas",
+          "start": 2.84,
+          "end": 3.32
+        },
+        {
+          "text": "de",
+          "start": 3.32,
+          "end": 3.56
+        },
+        {
+          "text": "satélite",
+          "start": 3.56,
+          "end": 4.12
+        },
+        {
+          "text": "que",
+          "start": 4.12,
+          "end": 4.34
+        },
+        {
+          "text": "planeja",
+          "start": 4.34,
+          "end": 4.86
+        },
+        {
+          "text": "vender",
+          "start": 4.86,
+          "end": 5.24
+        },
+        {
+          "text": "aos",
+          "start": 5.24,
+          "end": 5.5
+        },
+        {
+          "text": "clientes",
+          "start": 5.5,
+          "end": 6.08
+        },
+        {
+          "text": "Kuiper.",
+          "start": 6.08,
+          "end": 13.86
+        }
+      ],
+      "animation": "ZOOM_OUT"
+    },
+    {
+      "text": "Os testes iniciais dessas antenas mostraram velocidades de download de até 400 Mbps.",
+      "type": "CONTENT",
+      "image": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/images/20.jpg"
+      },
+      "audioDuration": 6.687312,
+      "audio": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/audio/20.mp3"
+      },
+      "speechTimestamp": [
+        {
+          "text": "Os",
+          "start": 0,
+          "end": 0.14
+        },
+        {
+          "text": "testes",
+          "start": 0.15,
+          "end": 0.59
+        },
+        {
+          "text": "iniciais",
+          "start": 0.6,
+          "end": 1.19
+        },
+        {
+          "text": "dessas",
+          "start": 1.2,
+          "end": 1.63
+        },
+        {
+          "text": "antenas",
+          "start": 1.64,
+          "end": 2.16
+        },
+        {
+          "text": "mostraram",
+          "start": 2.16,
+          "end": 2.76
+        },
+        {
+          "text": "velocidades",
+          "start": 2.76,
+          "end": 3.46
+        },
+        {
+          "text": "de",
+          "start": 3.46,
+          "end": 3.76
+        },
+        {
+          "text": "download",
+          "start": 3.76,
+          "end": 4.18
+        },
+        {
+          "text": "de",
+          "start": 3.46,
+          "end": 3.76
+        },
+        {
+          "text": "até",
+          "start": 4.62,
+          "end": 4.92
+        },
+        {
+          "text": "400",
+          "start": 4.92,
+          "end": 5.5
+        },
+        {
+          "text": "Mbps.",
+          "start": 5.5,
+          "end": 12.78
+        }
+      ],
+      "animation": "ZOOM_IN"
+    },
+    {
+      "text": "As principais instalações do Kuiper da Amazon estão localizadas perto de Seattle, com outras localizações espalhadas pelos EUA.",
+      "type": "CONTENT",
+      "image": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/images/21.jpg"
+      },
+      "audioDuration": 9.560812,
+      "audio": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/audio/21.mp3"
+      },
+      "speechTimestamp": [
+        {
+          "text": "As",
+          "start": 0,
+          "end": 0.14
+        },
+        {
+          "text": "principais",
+          "start": 0.15,
+          "end": 0.84
+        },
+        {
+          "text": "instalações",
+          "start": 0.85,
+          "end": 1.61
+        },
+        {
+          "text": "do",
+          "start": 1.62,
+          "end": 1.75
+        },
+        {
+          "text": "Kuiper",
+          "start": 1.76,
+          "end": 2.18
+        },
+        {
+          "text": "da",
+          "start": 2.18,
+          "end": 2.52
+        },
+        {
+          "text": "Amazon",
+          "start": 2.52,
+          "end": 2.94
+        },
+        {
+          "text": "estão",
+          "start": 2.94,
+          "end": 3.4
+        },
+        {
+          "text": "localizadas",
+          "start": 3.4,
+          "end": 4.14
+        },
+        {
+          "text": "perto",
+          "start": 4.14,
+          "end": 4.52
+        },
+        {
+          "text": "de",
+          "start": 4.52,
+          "end": 4.76
+        },
+        {
+          "text": "Seattle,",
+          "start": 4.76,
+          "end": 5.62
+        },
+        {
+          "text": "com",
+          "start": 5.62,
+          "end": 5.9
+        },
+        {
+          "text": "outras",
+          "start": 5.9,
+          "end": 6.26
+        },
+        {
+          "text": "localizações",
+          "start": 6.26,
+          "end": 7.12
+        },
+        {
+          "text": "espalhadas",
+          "start": 7.12,
+          "end": 7.8
+        },
+        {
+          "text": "pelos",
+          "start": 7.8,
+          "end": 8.24
+        },
+        {
+          "text": "EUA.",
+          "start": 8.24,
+          "end": 16.84
+        }
+      ],
+      "animation": "ZOOM_OUT"
+    },
+    {
+      "text": "Com tantos avanços, o futuro da internet via satélite parece promissor!",
+      "type": "OUTRO",
+      "image": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/images/22.jpg"
+      },
+      "audioDuration": 5.198313,
+      "audio": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/audio/22.mp3"
+      },
+      "speechTimestamp": [
+        {
+          "text": "Com",
+          "start": 0,
+          "end": 0.27
+        },
+        {
+          "text": "tantos",
+          "start": 0.28,
+          "end": 0.82
+        },
+        {
+          "text": "avanços,",
+          "start": 0.83,
+          "end": 1.55
+        },
+        {
+          "text": "o",
+          "start": 1.56,
+          "end": 1.65
+        },
+        {
+          "text": "futuro",
+          "start": 1.65,
+          "end": 2.2
+        },
+        {
+          "text": "da",
+          "start": 2.2,
+          "end": 2.58
+        },
+        {
+          "text": "internet",
+          "start": 2.58,
+          "end": 2.86
+        },
+        {
+          "text": "via",
+          "start": 2.86,
+          "end": 3.22
+        },
+        {
+          "text": "satélite",
+          "start": 3.22,
+          "end": 3.96
+        },
+        {
+          "text": "parece",
+          "start": 3.96,
+          "end": 4.22
+        },
+        {
+          "text": "promissor!",
+          "start": 4.22,
+          "end": 10.36
+        }
+      ],
+      "animation": "ZOOM_IN"
+    },
+    {
+      "text": "Para mais detalhes sobre esta incrível jornada da Amazon no espaço, confira o post original na descrição.",
+      "type": "OUTRO",
+      "image": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/images/23.jpg"
+      },
+      "audioDuration": 6.922438,
+      "audio": {
+        "type": "PATH",
+        "path": "2023_10_11-00_39_38/audio/23.mp3"
+      },
+      "speechTimestamp": [
+        {
+          "text": "Para",
+          "start": 0,
+          "end": 0.28
+        },
+        {
+          "text": "mais",
+          "start": 0.29,
+          "end": 0.56
+        },
+        {
+          "text": "detalhes",
+          "start": 0.57,
+          "end": 1.13
+        },
+        {
+          "text": "sobre",
+          "start": 1.14,
+          "end": 1.49
+        },
+        {
+          "text": "esta",
+          "start": 1.5,
+          "end": 1.78
+        },
+        {
+          "text": "incrível",
+          "start": 1.78,
+          "end": 2.34
+        },
+        {
+          "text": "jornada",
+          "start": 2.34,
+          "end": 2.92
+        },
+        {
+          "text": "da",
+          "start": 2.92,
+          "end": 3.2
+        },
+        {
+          "text": "Amazon",
+          "start": 3.2,
+          "end": 3.5
+        },
+        {
+          "text": "no",
+          "start": 3.5,
+          "end": 3.7
+        },
+        {
+          "text": "espaço,",
+          "start": 3.7,
+          "end": 4.42
+        },
+        {
+          "text": "confira",
+          "start": 4.42,
+          "end": 4.86
+        },
+        {
+          "text": "o",
+          "start": 4.86,
+          "end": 5
+        },
+        {
+          "text": "post",
+          "start": 5,
+          "end": 5.36
+        },
+        {
+          "text": "original",
+          "start": 5.36,
+          "end": 5.74
+        },
+        {
+          "text": "na",
+          "start": 5.74,
+          "end": 6.06
+        },
+        {
+          "text": "descrição.",
+          "start": 6.06,
+          "end": 13.82
+        }
+      ],
+      "animation": "ZOOM_OUT"
+    }
+  ]
+}

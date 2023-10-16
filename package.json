@@ -6,7 +6,8 @@
     "*.css"
   ],
   "scripts": {
-    "dev": "remotion studio video/index.ts",
+    "dev:assets": "doppler run -p haive -c dev -- tsx src/generate-assets.ts",
+    "dev:studio": "remotion studio video/index.ts",
     "build": "remotion render MyComp out/video.mp4",
     "upgrade": "remotion upgrade",
     "test": "eslint src --ext ts,tsx,js,jsx && tsc"
@@ -21,10 +22,17 @@
     }
   },
   "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@ffprobe-installer/ffprobe": "^2.1.2",
     "@remotion/bundler": "4.0.47",
     "@remotion/cli": "4.0.47",
+    "@remotion/media-utils": "^4.0.47",
     "@remotion/zod-types": "4.0.47",
     "@xenova/transformers": "^2.6.2",
+    "axios": "^1.5.1",
+    "env-var": "^7.4.1",
+    "fluent-ffmpeg": "^2.1.2",
+    "get-audio-duration": "^4.0.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "remotion": "4.0.47",

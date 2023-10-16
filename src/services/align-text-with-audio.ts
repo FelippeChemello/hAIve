@@ -7,7 +7,7 @@ function normalize(word: string){
     return word.replace(/[.,/#!$%^&*;:{}=\-_`~()]/g, "").toLowerCase().trim();
 }
 
-export default async function AlignTextWithAudio(audioPath: string, text: string): Promise<Transcript> {
+export default async function alignTextWithAudio(audioPath: string, text: string): Promise<Transcript> {
     const words = text.split(' ');
     const transcription = await transcribe(audioPath);
     const transcriptionWithExtraInfo = transcription.map((transcript, index) => ({

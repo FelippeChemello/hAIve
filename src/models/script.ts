@@ -4,12 +4,14 @@ export enum ScriptType {
   INTRO = 'INTRO',
   CONTENT = 'CONTENT',
   OUTRO = 'OUTRO',
+  END = 'END',
 }
 
 export enum ScriptItemType {
   DESCRIPTION = 'DESCRIPTION',
   PATH = 'PATH',
   URL = 'URL',
+  VOID = 'VOID',
 }
 
 export enum ImageAnimation {
@@ -36,14 +38,19 @@ export const scriptItemUrlSchema = z.object({
   url: z.string(),
 })
 
+export const scriptItemVoidSchema = z.object({
+    type: z.literal(ScriptItemType.VOID),
+})
+
 export const videoScriptBaseSchema = z.object({
-  text: z.string(),
-  type: z.nativeEnum(ScriptType),
-  image: z.discriminatedUnion('type', [
-    scriptItemDescriptionSchema,
-    scriptItemPathSchema,
-    scriptItemUrlSchema,
-  ])
+    text: z.string(),
+    type: z.nativeEnum(ScriptType).default(ScriptType.CONTENT),
+    image: z.discriminatedUnion('type', [
+        scriptItemDescriptionSchema,
+        scriptItemPathSchema,
+        scriptItemUrlSchema,
+        scriptItemVoidSchema
+    ]).default({type: ScriptItemType.VOID})
 })
 
 export type VideoScriptBase = z.infer<typeof videoScriptBaseSchema>
@@ -73,6 +80,7 @@ const videoScriptSchema = z.object({
     scriptItemPathSchema,
     scriptItemUrlSchema,
   ]),
+  audioDuration: z.number(),
   speechTimestamp: z.array(speechTimestampSchema),
   animation: z.nativeEnum(ImageAnimation),
 })
@@ -85,4 +93,5 @@ export const videoSchema = z.object({
   script: z.array(videoScriptSchema),
 })
 
+export type Video = z.infer<typeof videoSchema>
   
