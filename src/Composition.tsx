@@ -1,28 +1,38 @@
-import {AbsoluteFill} from 'remotion';
-import {Logo} from './Logo';
-import {Subtitle} from './Subtitle';
-import {Title} from './Title';
+import {useCallback, useState} from 'react'
+import {AbsoluteFill, continueRender, delayRender} from 'remotion';
 import {z} from 'zod';
-import {zColor} from '@remotion/zod-types';
+import { FaceTracker } from './FaceTracker';
+import { VideoReframer } from './VideoReframer';
 
-export const myCompSchema = z.object({
-	titleText: z.string(),
-	titleColor: zColor(),
-	logoColor: zColor(),
+export const schema = z.object({
+	video: z.object({
+		url: z.string().url(),
+		width: z.number(),
+		height: z.number(),
+	}),
 });
 
-export const MyComposition: React.FC<z.infer<typeof myCompSchema>> = ({
-	titleText: propOne,
-	titleColor: propTwo,
-	logoColor: propThree,
+export const Main: React.FC<z.infer<typeof schema>> = ({
+	video: {
+		url: videoURL,
+		height: videoHeight,
+		width: videoWidth,
+	}
 }) => {
+	const [waitForFaceTracking] = useState(() => delayRender());
+	const [faceTracked, setFaceTracked] = useState(false);
+
+	const onFaceTracked = useCallback(() => {
+		setFaceTracked(true);
+		continueRender(waitForFaceTracking);
+	}, [waitForFaceTracking]);
+
 	return (
 		<AbsoluteFill className="bg-gray-100 items-center justify-center">
-			<div className="m-10" />
-			<Logo logoColor={propThree} />
-			<div className="m-3" />
-			<Title titleText={propOne} titleColor={propTwo} />
-			<Subtitle />
+			{faceTracked 
+				? <VideoReframer videoHeight={videoHeight} videoWidth={videoWidth} videoURL={videoURL} />
+				: <FaceTracker videoURL={videoURL} videoHeight={videoHeight} videoWidth={videoWidth} onDone={onFaceTracked} />
+			}
 		</AbsoluteFill>
 	);
 };
