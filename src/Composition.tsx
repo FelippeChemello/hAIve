@@ -1,8 +1,7 @@
-import {useCallback, useMemo, useState} from 'react'
-import {AbsoluteFill, continueRender, delayRender} from 'remotion';
+import {useMemo} from 'react'
+import {AbsoluteFill} from 'remotion';
 import {z} from 'zod';
-import { FaceTracker } from './FaceTracker';
-import { VideoReframer } from './VideoReframer';
+import { VideoReframer, centerSchema } from './VideoReframer';
 import {Subtitles, schema as wordSubtitleSchema} from './Subtitles'
 
 export const subtitleSchema = z.array(z.object({
@@ -17,7 +16,8 @@ export const schema = z.object({
 		width: z.number(),
 		height: z.number(),
 	}),
-	subtitles: subtitleSchema
+	subtitles: subtitleSchema,
+	center: centerSchema
 });
 
 export const Main: React.FC<z.infer<typeof schema>> = ({
@@ -26,16 +26,9 @@ export const Main: React.FC<z.infer<typeof schema>> = ({
 		height: videoHeight,
 		width: videoWidth,
 	},
-	subtitles
+	subtitles,
+	center
 }) => {
-	const [waitForFaceTracking] = useState(() => delayRender('Face tracking'));
-	const [faceTracked, setFaceTracked] = useState(false);
-
-	const onFaceTracked = useCallback(() => {
-		continueRender(waitForFaceTracking);
-		setFaceTracked(true);
-	}, [waitForFaceTracking]);
-
 	const words = useMemo(() => {
 		if (!subtitles) {
 			return [];
@@ -46,10 +39,7 @@ export const Main: React.FC<z.infer<typeof schema>> = ({
 
 	return (
 		<AbsoluteFill className="bg-gray-100 items-center justify-center">
-			{faceTracked 
-				? <VideoReframer videoHeight={videoHeight} videoWidth={videoWidth} videoURL={videoURL} />
-				: <FaceTracker videoURL={videoURL} videoHeight={videoHeight} videoWidth={videoWidth} onDone={onFaceTracked} />
-			}
+			<VideoReframer videoHeight={videoHeight} videoWidth={videoWidth} videoURL={videoURL} center={center} />
 			{Boolean(words.length) && words.map((word, index) => <Subtitles key={index} {...word} />)}
 		</AbsoluteFill>
 	);

@@ -1,38 +1,26 @@
-import { useCallback, useEffect, useMemo, useRef } from 'react';
+import { useCallback, useEffect, useRef } from 'react';
 import { AbsoluteFill, Video, interpolate, useCurrentFrame, useVideoConfig } from 'remotion';
 import { z } from 'zod';
-import { loadCalculateFrame, trackEachFrames } from './FaceTracker';
+
+export const centerSchema = z.record(z.string(), z.array(z.number()).length(2));
 
 const schema = z.object({
   videoURL: z.string().url(),
   videoWidth: z.number(),
   videoHeight: z.number(),
+  center: centerSchema,
 });
 
 export const VideoReframer: React.FC<z.infer<typeof schema>> = ({
   videoURL,
   videoHeight,
   videoWidth,
+  center
 }) => {
   const video = useRef<HTMLVideoElement>(null);
   const canvas = useRef<HTMLCanvasElement>(null);
-  const { width, height, durationInFrames } = useVideoConfig();
+  const { width, height } = useVideoConfig();
   const currentFrame = useCurrentFrame();
-  
-  const targetX = useMemo(() => {
-    const frames = [];
-
-    for (let i = 0; i < durationInFrames; i++) {
-      if (i % trackEachFrames !== 0) continue
-      
-      const framePosition = loadCalculateFrame(i, videoURL)
-      if (framePosition && framePosition.x) {        
-        frames.push(framePosition.x)
-      }
-    }
-
-    return frames;
-  }, [durationInFrames, videoURL]);
 
   const onVideoFrame = useCallback(async () => {
     if (!canvas.current || !video.current) {
@@ -42,9 +30,13 @@ export const VideoReframer: React.FC<z.infer<typeof schema>> = ({
     if (!context) {
       return;
     }
-
     
-    const frames = Array.from(Array(targetX.length).keys()).map((_, i) => i * trackEachFrames)
+    const {frames, targetX}: {frames: Array<number>, targetX: Array<number>} = Object.entries(center)
+      .reduce((acc, [frame, [x]]) => {
+        acc.frames.push(Number(frame))
+        acc.targetX.push(x)
+        return acc
+      }, {frames: [] as Array<number>, targetX: [] as Array<number>})
 
     const x = interpolate(currentFrame, frames, targetX) 
     const zoom = 3.5
@@ -61,7 +53,7 @@ export const VideoReframer: React.FC<z.infer<typeof schema>> = ({
       width,
       height
     );
-  }, [videoWidth, videoHeight, currentFrame, targetX, width, height]);
+  }, [videoWidth, videoHeight, currentFrame, center, width, height]);
 
   useEffect(() => {
     const { current } = video;
