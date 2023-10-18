@@ -1,7 +1,7 @@
 /* eslint-disable @remotion/warn-native-media-tag */
 
 import {useCallback, useEffect, useRef, useState} from 'react'
-import {AbsoluteFill, useVideoConfig} from 'remotion'
+import {AbsoluteFill, Video, useVideoConfig} from 'remotion'
 import {z} from 'zod';
 import * as tf from '@tensorflow/tfjs'; 
 import * as facemesh from '@tensorflow-models/facemesh'; 
@@ -11,8 +11,6 @@ type Coordinates = {
   y: number;
 }
 
-const indicatorSize = 50;
-
 const schema = z.object({
   videoURL: z.string().url(),
   videoWidth: z.number(),
@@ -20,8 +18,10 @@ const schema = z.object({
   onDone: z.function()
 });
 
+export const trackEachFrames = 15;
+
 const getKey = (frame: number, src: string) =>
-	['coordinates', frame, src].join('-');
+	['coordinates', frame, src, trackEachFrames].join('-');
 
 const saveCalculatedFrame = (
 	frame: number,
@@ -52,7 +52,6 @@ export const FaceTracker: React.FC<z.infer<typeof schema>> = ({
   const [framesAnalyzed, setFramesAnalyzed] = useState(0)
   const videoRef = useRef<HTMLVideoElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const indicatorRef = useRef<HTMLDivElement>(null);
   const net = useRef<facemesh.FaceMesh | null>(null);
   const {fps} = useVideoConfig();
 
@@ -76,7 +75,12 @@ export const FaceTracker: React.FC<z.infer<typeof schema>> = ({
     if (!predictions.length) return null
 
     // @ts-expect-error - I don't know why this is happening
-    const [x, y] = predictions[0].annotations.noseTip
+    const [trackingPoints] = predictions[0].annotations.noseTip
+
+    const [x, y] = trackingPoints
+
+    console.log(x, y)
+
     return { x, y };
 	}, [videoRef, videoHeight, videoWidth]);
 
@@ -92,16 +96,6 @@ export const FaceTracker: React.FC<z.infer<typeof schema>> = ({
 				video.requestVideoFrameCallback(async () => {
 					const item = await callback();
 					saveCalculatedFrame(frame, videoURL, item);
-					if (!indicatorRef.current) {
-						return;
-					}
-					if (item === null) {
-						indicatorRef.current.style.left = '-999px';
-						indicatorRef.current.style.top = '-999px';
-					} else {
-						indicatorRef.current.style.left = item.x - indicatorSize / 2 + 'px';
-						indicatorRef.current.style.top = item.y - indicatorSize / 2 + 'px';
-					}
 					return resolve(item);
 				});
 			});
@@ -112,6 +106,8 @@ export const FaceTracker: React.FC<z.infer<typeof schema>> = ({
     const frames = Math.floor(time * fps)
 
     for (let i = 0; i < frames; i++) {
+      if (i % trackEachFrames !== 0) continue
+
       console.time(`Tracking frame ${i}`)
       await trackFrame(video, i)
       console.timeEnd(`Tracking frame ${i}`)
@@ -136,7 +132,7 @@ export const FaceTracker: React.FC<z.infer<typeof schema>> = ({
   return (
     <AbsoluteFill className="bg-gray-100 items-center justify-center">
       <AbsoluteFill>
-        <video 
+        <Video 
           ref={videoRef}
           src={videoURL}
         />
@@ -158,18 +154,6 @@ export const FaceTracker: React.FC<z.infer<typeof schema>> = ({
 				}}
 			>
 				{framesAnalyzed} Frames analyzed
-			</AbsoluteFill>
-
-			<AbsoluteFill>
-				<div
-					ref={indicatorRef}
-					style={{
-						position: 'absolute',
-						border: '5px solid blue',
-						height: indicatorSize,
-						width: indicatorSize,
-					}}
-				/>
 			</AbsoluteFill>
     </AbsoluteFill>
   );

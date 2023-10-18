@@ -1,7 +1,7 @@
-import { useCallback, useEffect, useRef } from 'react';
-import { AbsoluteFill, Video, useCurrentFrame, useVideoConfig } from 'remotion';
+import { useCallback, useEffect, useMemo, useRef } from 'react';
+import { AbsoluteFill, Video, interpolate, useCurrentFrame, useVideoConfig } from 'remotion';
 import { z } from 'zod';
-import { loadCalculateFrame } from './FaceTracker';
+import { loadCalculateFrame, trackEachFrames } from './FaceTracker';
 
 const schema = z.object({
   videoURL: z.string().url(),
@@ -16,8 +16,23 @@ export const VideoReframer: React.FC<z.infer<typeof schema>> = ({
 }) => {
   const video = useRef<HTMLVideoElement>(null);
   const canvas = useRef<HTMLCanvasElement>(null);
-  const { width, height } = useVideoConfig();
+  const { width, height, fps, durationInFrames } = useVideoConfig();
   const currentFrame = useCurrentFrame();
+  
+  const targetX = useMemo(() => {
+    const frames = [];
+
+    for (let i = 0; i < durationInFrames; i++) {
+      if (i % trackEachFrames !== 0) continue
+      
+      const framePosition = loadCalculateFrame(i, videoURL)
+      if (framePosition && framePosition.x) {        
+        frames.push(framePosition.x)
+      }
+    }
+
+    return frames;
+  }, []);
 
   const onVideoFrame = useCallback(async () => {
     if (!canvas.current || !video.current) {
@@ -28,31 +43,26 @@ export const VideoReframer: React.FC<z.infer<typeof schema>> = ({
       return;
     }
 
-    const framePosition = await loadCalculateFrame(currentFrame, videoURL);
-    if (!framePosition || !framePosition.x) {
-      return;
-    }
+    
+    const frames = Array.from(Array(targetX.length).keys()).map((_, i) => i * trackEachFrames)
+    console.log(frames, targetX)
 
-    const [ x, y ] = framePosition.x;
-
-    const zoomFactor = 3; // Adjust as needed
-    const targetWidth = videoWidth / zoomFactor;
-
-    const targetX = x - targetWidth / 2;
+    const x = interpolate(currentFrame, frames, targetX) 
+    const zoom = 3.5
 
     context.clearRect(0, 0, width, height);
     context.drawImage(
       video.current,
-      targetX,
+      x - videoWidth / (zoom * 2),
       0,
-      targetWidth,
+      videoWidth / 3,
       videoHeight,
       0,
       0,
       width,
       height
     );
-  }, [videoWidth, videoHeight, videoURL, currentFrame, width, height]);
+  }, [videoWidth, videoHeight, videoURL, currentFrame, targetX, width, height, fps]);
 
   useEffect(() => {
     const { current } = video;
