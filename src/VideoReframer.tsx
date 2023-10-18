@@ -16,7 +16,7 @@ export const VideoReframer: React.FC<z.infer<typeof schema>> = ({
 }) => {
   const video = useRef<HTMLVideoElement>(null);
   const canvas = useRef<HTMLCanvasElement>(null);
-  const { width, height, fps, durationInFrames } = useVideoConfig();
+  const { width, height, durationInFrames } = useVideoConfig();
   const currentFrame = useCurrentFrame();
   
   const targetX = useMemo(() => {
@@ -32,7 +32,7 @@ export const VideoReframer: React.FC<z.infer<typeof schema>> = ({
     }
 
     return frames;
-  }, []);
+  }, [durationInFrames, videoURL]);
 
   const onVideoFrame = useCallback(async () => {
     if (!canvas.current || !video.current) {
@@ -45,7 +45,6 @@ export const VideoReframer: React.FC<z.infer<typeof schema>> = ({
 
     
     const frames = Array.from(Array(targetX.length).keys()).map((_, i) => i * trackEachFrames)
-    console.log(frames, targetX)
 
     const x = interpolate(currentFrame, frames, targetX) 
     const zoom = 3.5
@@ -62,7 +61,7 @@ export const VideoReframer: React.FC<z.infer<typeof schema>> = ({
       width,
       height
     );
-  }, [videoWidth, videoHeight, videoURL, currentFrame, targetX, width, height, fps]);
+  }, [videoWidth, videoHeight, currentFrame, targetX, width, height]);
 
   useEffect(() => {
     const { current } = video;
@@ -86,9 +85,9 @@ export const VideoReframer: React.FC<z.infer<typeof schema>> = ({
   return (
     <>
       <AbsoluteFill>
-        <Video ref={video} style={{ opacity: 0 }} src={videoURL} />
+        <Video ref={video} src={videoURL} className='opacity-0'/>
       </AbsoluteFill>
-      <canvas ref={canvas} height={height} width={width} style={{ width: '100%', height: '100%' }} />
+      <canvas ref={canvas} height={height} width={width} className='w-full h-full' />
     </>
   );
 };

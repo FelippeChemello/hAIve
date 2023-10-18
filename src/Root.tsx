@@ -1,27 +1,45 @@
 import {Composition, continueRender, delayRender, staticFile} from 'remotion';
-import {Main, schema} from './Composition';
+import {Main, schema, subtitleSchema} from './Composition';
 import './style.css';
 import { useEffect, useState } from 'react';
 import { VideoMetadata, getVideoMetadata } from '@remotion/media-utils';
+import { z } from 'zod';
 
 export const RemotionRoot: React.FC = () => {
-	const src = staticFile('video.mp4');
+	const videoURL = staticFile('video.mp4');
+	const subtitlesURL = staticFile('subtitles.json');
 
-	const [handle] = useState(() => delayRender());
+	const [waitForVideoMetadata] = useState(() => delayRender('Video metadata'));
 	const [videoData, setVideoData] = useState<VideoMetadata | null>(null);
+	
+	const [waitForSubtitles] = useState(() => delayRender('Subtitles'));
+	const [subtitles, setSubtitles] = useState<z.infer<typeof subtitleSchema> | null>(null);
 
 	useEffect(() => {
-		getVideoMetadata(src)
+		getVideoMetadata(videoURL)
 			.then((data) => {
 				setVideoData(data);
-				continueRender(handle);
+				continueRender(waitForVideoMetadata);
 			})
 			.catch((err) => {
 				console.error(err);
 			});
-	}, [handle, src])
 
-	if (!videoData) {
+			console.log(subtitlesURL)
+		fetch(subtitlesURL)
+			.then((response) => response.json())
+			.then((data) => {
+				setSubtitles(data);
+				continueRender(waitForSubtitles);
+			})
+			.catch((err) => {
+				console.error(err);
+			});
+	}, [waitForVideoMetadata, videoURL, subtitlesURL, waitForSubtitles]);
+
+
+
+	if (!videoData || !subtitles) {
 		return null;
 	}
 
@@ -39,10 +57,11 @@ export const RemotionRoot: React.FC = () => {
 				schema={schema}
 				defaultProps={{
 					video: {
-						url: src,
+						url: videoURL,
 						height,
 						width
-					}
+					},
+					subtitles
 				}}
 			/>
 		</>

@@ -56,7 +56,7 @@ export const FaceTracker: React.FC<z.infer<typeof schema>> = ({
   const {fps} = useVideoConfig();
 
   const loadFacemeshModel = useCallback(async () => {
-    await tf.setBackend('webgl');
+    await tf.setBackend('cpu');
     const model = await facemesh.load();
     net.current = model;
   }, []);
@@ -78,8 +78,6 @@ export const FaceTracker: React.FC<z.infer<typeof schema>> = ({
     const [trackingPoints] = predictions[0].annotations.noseTip
 
     const [x, y] = trackingPoints
-
-    console.log(x, y)
 
     return { x, y };
 	}, [videoRef, videoHeight, videoWidth]);
