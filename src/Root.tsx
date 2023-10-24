@@ -1,24 +1,33 @@
-import {Composition, continueRender, delayRender, cancelRender, staticFile} from 'remotion';
+import {Composition, continueRender, delayRender, cancelRender, staticFile, CalculateMetadataFunction} from 'remotion';
 import {Main, schema, subtitleSchema} from './Composition';
 import './style.css';
 import { useEffect, useState } from 'react';
 import { VideoMetadata, getVideoMetadata } from '@remotion/media-utils';
 import { z } from 'zod';
-import { centerSchema } from './VideoReframer';
+import { faceTracker } from './face-tracker';
+
+const calculateMetadata: CalculateMetadataFunction<z.infer<typeof schema>> = async ({
+	props,
+}) => {
+	const center = await faceTracker(props.video.url, 15, 30)
+
+	return {
+		props: {
+			...props,
+			center
+		}
+	}
+}
 
 export const RemotionRoot: React.FC = () => {
 	const videoURL = staticFile('video.mp4');
 	const subtitlesURL = staticFile('subtitles.json');
-	const centerURL = staticFile('center.json');
 
 	const [waitForVideoMetadata] = useState(() => delayRender('Video metadata'));
 	const [videoData, setVideoData] = useState<VideoMetadata | null>(null);
 	
 	const [waitForSubtitles] = useState(() => delayRender('Subtitles'));
 	const [subtitles, setSubtitles] = useState<z.infer<typeof subtitleSchema> | null>(null);
-
-	const [waitForCenter] = useState(() => delayRender('Center'));
-	const [center, setCenter] = useState<z.infer<typeof centerSchema> | null>(null);
 
 	useEffect(() => {
 		getVideoMetadata(videoURL)
@@ -41,28 +50,15 @@ export const RemotionRoot: React.FC = () => {
 				console.error(err);
 				cancelRender('Subtitles');
 			});
-
-		fetch(centerURL)
-			.then((response) => response.json())
-			.then((data) => {
-				setCenter(data);
-				continueRender(waitForCenter);
-			})
-			.catch((err) => {
-				console.error(err);
-				cancelRender('Center');
-			});
-	}, [waitForVideoMetadata, videoURL, subtitlesURL, waitForSubtitles, centerURL, waitForCenter]);
+	}, [waitForVideoMetadata, videoURL, subtitlesURL, waitForSubtitles]);
 
 
 
-	if (!videoData || !subtitles || !center) {
+	if (!videoData || !subtitles) {
 		return null;
 	}
 
 	const {durationInSeconds, height, width} = videoData
-
-	console.log(subtitlesURL, subtitles)
 
 	return (
 		<>
@@ -74,14 +70,13 @@ export const RemotionRoot: React.FC = () => {
 				width={height}
 				height={width}
 				schema={schema}
+				calculateMetadata={calculateMetadata}
 				defaultProps={{
 					video: {
 						url: videoURL,
-						height,
-						width
 					},
 					subtitles,
-					center
+					groupWords: 1,
 				}}
 			/>
 		</>

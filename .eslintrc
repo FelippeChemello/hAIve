@@ -6,5 +6,8 @@
 	"rules": {
 		"camelcase": "off",
 		"capitalized-comments": "off",
+		"max-params": "off",
+		"no-negated-condition": "off",
+		"guard-for-in": "off",
 	}
 }

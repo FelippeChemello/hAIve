@@ -12,3 +12,5 @@ Config.setVideoImageFormat('jpeg');
 Config.setOverwriteOutput(true);
 
 Config.overrideWebpackConfig(webpackOverride);
+
+Config.setDelayRenderTimeoutInMilliseconds(999999999);

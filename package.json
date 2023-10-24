@@ -27,6 +27,8 @@
     "@remotion/zod-types": "4.0.50",
     "@tensorflow-models/facemesh": "^0.0.5",
     "@tensorflow/tfjs": "^4.11.0",
+    "@tensorflow/tfjs-backend-wasm": "^4.12.0",
+    "@tensorflow/tfjs-converter": "^4.12.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "remotion": "4.0.50",
