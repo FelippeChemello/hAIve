@@ -8,6 +8,6 @@
 		"capitalized-comments": "off",
 		"max-params": "off",
 		"no-negated-condition": "off",
-		"guard-for-in": "off",
+		"guard-for-in": "off"
 	}
 }

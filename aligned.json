@@ -1,0 +1,367 @@
+[
+  {
+    "text": "Google",
+    "start": 0,
+    "end": 0.44
+  },
+  {
+    "text": "mitiga",
+    "start": 0.45,
+    "end": 0.89
+  },
+  {
+    "text": "maior",
+    "start": 0.9,
+    "end": 1.27
+  },
+  {
+    "text": "ataque",
+    "start": 1.28,
+    "end": 1.72
+  },
+  {
+    "text": "DDoS",
+    "start": 1.73,
+    "end": 2.02
+  },
+  {
+    "text": "histórico,",
+    "start": 2.02,
+    "end": 2.64
+  },
+  {
+    "text": "atingindo",
+    "start": 2.64,
+    "end": 3.02
+  },
+  {
+    "text": "pico",
+    "start": 3.02,
+    "end": 3.38
+  },
+  {
+    "text": "de",
+    "start": 1.42,
+    "end": 1.62
+  },
+  {
+    "text": "398",
+    "start": 3.52,
+    "end": 4.58
+  },
+  {
+    "text": "milhões",
+    "start": 4.58,
+    "end": 5.1
+  },
+  {
+    "text": "de",
+    "start": 3.38,
+    "end": 3.52
+  },
+  {
+    "text": "rps:",
+    "start": 5.4,
+    "end": 6.32
+  },
+  {
+    "text": "o",
+    "start": 6.36,
+    "end": 6.54
+  },
+  {
+    "text": "ataque,",
+    "start": 6.54,
+    "end": 6.8
+  },
+  {
+    "text": "que",
+    "start": 6.8,
+    "end": 7
+  },
+  {
+    "text": "durou",
+    "start": 7,
+    "end": 7.16
+  },
+  {
+    "text": "dois",
+    "start": 7.16,
+    "end": 7.42
+  },
+  {
+    "text": "minutos,",
+    "start": 7.42,
+    "end": 8.04
+  },
+  {
+    "text": "usou",
+    "start": 8.04,
+    "end": 8.27
+  },
+  {
+    "text": "uma",
+    "start": 8.28,
+    "end": 8.46
+  },
+  {
+    "text": "nova",
+    "start": 8.46,
+    "end": 8.78
+  },
+  {
+    "text": "técnica,",
+    "start": 8.78,
+    "end": 9.28
+  },
+  {
+    "text": "chamada",
+    "start": 9.28,
+    "end": 10.02
+  },
+  {
+    "text": "“HTTP/2",
+    "start": 10.02,
+    "end": 11.56
+  },
+  {
+    "text": "Rapid",
+    "start": 11.56,
+    "end": 11.98
+  },
+  {
+    "text": "Reset”,",
+    "start": 11.98,
+    "end": 13.02
+  },
+  {
+    "text": "explorando",
+    "start": 13.02,
+    "end": 13.56
+  },
+  {
+    "text": "uma",
+    "start": 13.56,
+    "end": 13.86
+  },
+  {
+    "text": "vulnerabilidade",
+    "start": 13.86,
+    "end": 14.64
+  },
+  {
+    "text": "no",
+    "start": 14.64,
+    "end": 14.82
+  },
+  {
+    "text": "protocolo",
+    "start": 14.82,
+    "end": 15.62
+  },
+  {
+    "text": "(CVE-2023-44487)",
+    "start": 15.62,
+    "end": 16.57
+  },
+  {
+    "text": "e",
+    "start": 16.58,
+    "end": 16.63
+  },
+  {
+    "text": "permitindo",
+    "start": 16.64,
+    "end": 17.24
+  },
+  {
+    "text": "ataques",
+    "start": 17.24,
+    "end": 17.66
+  },
+  {
+    "text": "DDoS",
+    "start": 17.66,
+    "end": 17.89
+  },
+  {
+    "text": "hipervolumétricos.",
+    "start": 17.9,
+    "end": 18.97
+  },
+  {
+    "text": "Para",
+    "start": 18.98,
+    "end": 19.22
+  },
+  {
+    "text": "se",
+    "start": 19.22,
+    "end": 19.34
+  },
+  {
+    "text": "ter",
+    "start": 19.34,
+    "end": 19.52
+  },
+  {
+    "text": "uma",
+    "start": 19.52,
+    "end": 19.7
+  },
+  {
+    "text": "noção",
+    "start": 19.7,
+    "end": 20
+  },
+  {
+    "text": "do",
+    "start": 20,
+    "end": 20.12
+  },
+  {
+    "text": "tamanho",
+    "start": 20.12,
+    "end": 20.54
+  },
+  {
+    "text": "do",
+    "start": 20.54,
+    "end": 20.66
+  },
+  {
+    "text": "ataque,",
+    "start": 20.66,
+    "end": 21.08
+  },
+  {
+    "text": "segundo",
+    "start": 21.08,
+    "end": 21.5
+  },
+  {
+    "text": "a",
+    "start": 21.5,
+    "end": 21.56
+  },
+  {
+    "text": "Clouflare,",
+    "start": 21.56,
+    "end": 22.16
+  },
+  {
+    "text": "toda",
+    "start": 22.16,
+    "end": 22.4
+  },
+  {
+    "text": "a",
+    "start": 22.4,
+    "end": 22.45
+  },
+  {
+    "text": "web",
+    "start": 22.46,
+    "end": 22.64
+  },
+  {
+    "text": "registra",
+    "start": 22.64,
+    "end": 23.12
+  },
+  {
+    "text": "entre",
+    "start": 23.12,
+    "end": 23.42
+  },
+  {
+    "text": "1",
+    "start": 23.42,
+    "end": 23.48
+  },
+  {
+    "text": "e",
+    "start": 23.48,
+    "end": 23.54
+  },
+  {
+    "text": "3",
+    "start": 23.54,
+    "end": 23.6
+  },
+  {
+    "text": "bilhões",
+    "start": 23.6,
+    "end": 24.02
+  },
+  {
+    "text": "de",
+    "start": 24.02,
+    "end": 24.14
+  },
+  {
+    "text": "solicitações",
+    "start": 24.14,
+    "end": 24.86
+  },
+  {
+    "text": "por",
+    "start": 24.86,
+    "end": 25.04
+  },
+  {
+    "text": "segundo.",
+    "start": 25.04,
+    "end": 25.52
+  },
+  {
+    "text": "As",
+    "start": 25.52,
+    "end": 25.64
+  },
+  {
+    "text": "informações",
+    "start": 25.64,
+    "end": 26.3
+  },
+  {
+    "text": "são",
+    "start": 26.3,
+    "end": 26.48
+  },
+  {
+    "text": "dos",
+    "start": 26.48,
+    "end": 26.66
+  },
+  {
+    "text": "blogs",
+    "start": 26.66,
+    "end": 26.96
+  },
+  {
+    "text": "da",
+    "start": 26.96,
+    "end": 27.08
+  },
+  {
+    "text": "Cloudflare",
+    "start": 27.08,
+    "end": 27.68
+  },
+  {
+    "text": "e",
+    "start": 27.68,
+    "end": 27.68
+  },
+  {
+    "text": "Google",
+    "start": 27.68,
+    "end": 34.35
+  },
+  {
+    "text": "Cloud.",
+    "start": 34.35,
+    "end": 41.02
+  }
+]
