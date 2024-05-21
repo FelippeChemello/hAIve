@@ -1,0 +1,5 @@
+name: youtube-media-toolkit
+version: 1.0.0
+runtime: python3.8
+entrypoint: main.main
+requirements: requirements.txt
