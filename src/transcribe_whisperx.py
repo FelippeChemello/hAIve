@@ -1,6 +1,6 @@
 import whisperx
 import gc
-
+import torch
 
 def transcribe_with_whisperx(audio_path):
     device = "cuda"
@@ -22,7 +22,6 @@ def transcribe_with_whisperx(audio_path):
 
     gc.collect()
     if device == "cuda":
-        import torch
         torch.cuda.empty_cache()
         del model
         del model_a

@@ -1,5 +1,5 @@
 name: youtube-media-toolkit
 version: 1.0.0
 runtime: python3.8
-entrypoint: main.stub
+entrypoint: src.image:stub
 requirements: requirements.txt
