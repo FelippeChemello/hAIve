@@ -1,0 +1,19 @@
+@base_url = https://felippechemello--speech-to-text-fastapi-app-dev.modal.run
+@deployed_url = https://felippechemello--speech-to-text-fastapi-app.modal.run
+@job_id = {{transcribe.response.body.job_id}}
+
+### Run the transcription
+
+# @name transcribe
+
+POST {{base_url}}/transcribe HTTP/1.1
+Content-Type: application/json
+
+{
+    "url": "https://pub-29571f9f6cc34a1897b4b595a8caad75.r2.dev/ea87a6d0-17db-11ef-aa82-43d45adbe438%2Faudio.mp3",
+    "language": "pt"
+}
+
+### Get the transcription
+
+GET {{deployed_url}}/result/fc-01HYF6S33EQRXVQC77B2KTCD5N HTTP/1.1

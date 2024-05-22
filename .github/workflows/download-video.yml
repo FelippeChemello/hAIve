@@ -13,40 +13,6 @@ jobs:
         steps:
             - name: Checkout repository
               uses: actions/checkout@v2
-            
-            - name: Setup YT-DLP
-              uses: AnimMouse/setup-yt-dlp@v1
-              with: 
-                with-ffmpeg: true
-                
-            - name: Get video info
-              run: echo "video_name=$(yt-dlp --get-filename ${{ github.event.inputs.url }})" >> "$GITHUB_OUTPUT"
-
-            - name: Create UUID
-              id: generate-uuid
-              uses: filipstefansson/uuid-action@v1
-
-            - name: Download video
-              run: yt-dlp --add-metadata --format "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" --merge-output-format mp4 --output "video.%(ext)s" ${{ github.event.inputs.url }}
-              
-            - name: Generate MP3 file
-              run: ffmpeg -i video.mp4 -vn -acodec libmp3lame -ab 256k audio.mp3
-
-            - name: Create directory to store files
-              run: |
-                mkdir -p ${{ steps.generate-uuid.outputs.uuid }}
-                mv video.mp4 ${{ steps.generate-uuid.outputs.uuid }}/video.mp4
-                mv audio.mp3 ${{ steps.generate-uuid.outputs.uuid }}/audio.mp3
-
-            - name: Upload files to R2
-              uses: ryand56/r2-upload-action@latest
-              with:
-                r2-account-id: ${{ secrets.R2_ACCOUNT_ID }}
-                r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID }}
-                r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY }}
-                r2-bucket: ${{ secrets.R2_BUCKET }}
-                source-dir: ${{ steps.generate-uuid.outputs.uuid }}
-                destination-dir: ${{ steps.generate-uuid.outputs.uuid }}
 
             
             
