@@ -3,3 +3,10 @@ click
 yt-dlp
 python-ffmpeg
 python-dotenv
+google-generativeai
+google-api-python-client
+pillow
+rembg
+opencv-contrib-python
+numpy
+moviepy

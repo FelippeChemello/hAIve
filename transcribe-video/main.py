@@ -38,7 +38,7 @@ def transcribe(url, language=None):
 
     logger.info("Transcribing audio")
 
-    result = whisper_model.transcribe(audio)
+    result = whisper_model.transcribe(audio, chunk_size=15)
 
     for segment in result["segments"]:
         logger.info(f"{segment['start']} - {segment['end']}: {segment['text']}")

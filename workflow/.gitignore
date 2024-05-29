@@ -1,3 +1,5 @@
 .env
 *.mp4
 *.mp3
+transcription.txt
+*.png

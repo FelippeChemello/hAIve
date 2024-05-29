@@ -16,4 +16,4 @@ Content-Type: application/json
 
 ### Get the transcription
 
-GET {{deployed_url}}/result/fc-01HYF6S33EQRXVQC77B2KTCD5N HTTP/1.1
+GET {{base_url}}/result/{{job_id}} HTTP/1.1
