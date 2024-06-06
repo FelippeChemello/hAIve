@@ -1,8 +1,15 @@
-from ffmpeg import FFmpeg
+import ffmpeg
 
-def separate_audio(video_filename):
+def separate_audio(video_filename, dir_name):
+    try:
+        with open(dir_name + "/audio.mp3", "r") as f:
+            print('Audio file already exists')
+            return dir_name + "/audio.mp3"
+    except FileNotFoundError:
+        pass
+
     print('Generating MP3 audio from video')
-    FFmpeg().input(video_filename).output('audio.mp3').execute()
+    ffmpeg.input(video_filename).output(dir_name + "/audio.mp3").execute()
     print('Audio extraction complete')
 
-    return 'audio.mp3'
+    return dir_name + "/audio.mp3"

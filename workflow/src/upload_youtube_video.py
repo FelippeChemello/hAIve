@@ -3,7 +3,7 @@ from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 
-def upload_video(video_filename, title, keywords, original_video_url, thumbnail_filename):
+def upload_youtube_video(video_filename, title, keywords, original_video_url, thumbnail_filename, description):
     print("Uploading video to YouTube")
 
     youtube = build('youtube', 'v3', credentials=Credentials(
@@ -17,12 +17,13 @@ def upload_video(video_filename, title, keywords, original_video_url, thumbnail_
     media_body = {
         "snippet": {
             "categoryId": "24",
-            "description": "Video Original: " + original_video_url,
+            "description": description + "\n\n" + "Video Original: " + original_video_url,
             "title": title,
             "tags": keywords
         },
         "status": {
             "privacyStatus": "public",
+            "selfDeclaredMadeForKids": False
         },
     }
 
@@ -34,13 +35,13 @@ def upload_video(video_filename, title, keywords, original_video_url, thumbnail_
 
     response = request.execute()
 
-    # Upload the thumbnail
-    request = youtube.thumbnails().set(
-        videoId=response['id'],
-        media_body=MediaFileUpload(thumbnail_filename, resumable=True)
-    )
+    if thumbnail_filename:
+        request = youtube.thumbnails().set(
+            videoId=response['id'],
+            media_body=MediaFileUpload(thumbnail_filename, resumable=True)
+        )
 
-    request.execute()
+        request.execute()
 
     print(f"Video uploaded: https://www.youtube.com/watch?v={response['id']}")
 

@@ -1,5 +1,7 @@
 .env
-*.mp4
-*.mp3
+tmp/**/*.mp4
+tmp/**/*.mp3
 transcription.txt
-*.png
+tmp/**/*.png
+tmp/**/*.json
+tmp/**/*.srt

@@ -2,7 +2,14 @@ import os
 import google.generativeai as gemini
 import json
 
-def process_transcription(transcription):
+def process_transcription(transcription, dir_name):
+    try :
+        with open(dir_name + "/moments.json", "r") as f:
+            print('Moments file already exists')
+            return json.loads(f.read())
+    except FileNotFoundError:
+        pass
+
     gemini.configure(api_key=os.getenv('GEMINI_API_KEY'))
 
     generation_config = {
@@ -35,7 +42,7 @@ def process_transcription(transcription):
         model_name="gemini-1.5-pro-latest",
         safety_settings=safety_settings,
         generation_config=generation_config,
-        system_instruction="You must act as a Topic Extractor tool, It will be provided to you an SRT file, you should extract from it the most engaging moments. The transcription is from a Podcast, in which the host and guest discussed many topics.\nAnswer as an Array of JSON objects with keys \"start\" and \"end\" for the timestamp and key \"title\" with a engaging Youtube Video title in portuguese for the moment extracted, also provide key \"keywords\" with an array of words related to the moment, finally provide a key named \"extracted_sentence\" with the exactly text most shocking said by the speakers during this moment, this sentence must be short and shocking.\nIgnore all kind of promotions and sponsorship. Do not select this parts. Also do not select the intro and outro as a moment.\nEach moment should have between 3 and 10 minutes",
+        system_instruction="You must act as a Topic Extractor tool, It will be provided to you an SRT file, you should extract from it the most engaging moments. The transcription is from a Podcast, in which the host and guest discussed many topics.\n\nGUIDELINES FOR EXTRACTING TOPICS:\n- Duration: Must be between 3 and 10 minutes\n- Content Exclusions: Avoid including any promotional content, sponsorships, introductions, or conclusions.\n- Output Format: Must be a JSON array like with the following keys: \"start\" and \"end\" with the respective timestamps. \"title\" with a captivating YouTube video title in Portuguese that relates to the content of the moment but does not mention the podcast's name. \"description\" with a short description about what is talked on that moment. \"keywords\" as an array of 5 words related to the topic. \"extracted_sentence\" A single, impactful sentence extracted from the moment that encapsulates the essence of the discussion.\n\nFocus on extracting content that is particularly striking or memorable to ensure the highlights are engaging for the audience.",
     )
 
     chat_session = genai.start_chat(history=[])
@@ -47,9 +54,12 @@ def process_transcription(transcription):
     print("Response received from Gemini AI")
     print(response.text)
 
-    parsed_response = json.loads(response.text)
+    json_response = json.loads(response.text)
 
-    return parsed_response
+    with open(dir_name + "/moments.json", "w") as f:
+        f.write(json.dumps(json_response, indent=4))
+                     
+    return json_response
 
 
 

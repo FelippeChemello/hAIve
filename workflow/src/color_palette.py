@@ -145,8 +145,10 @@ colors = [
     {"bg": "#2E294E", "fg": "#9E4770", "text": "#FBF9FA"}  
 ]
 
-def get_random_color():
+def get_random_color(dir_name):
     import random
+
+    random.seed(dir_name)
     return random.choice(colors)
 
 if __name__ == "__main__":

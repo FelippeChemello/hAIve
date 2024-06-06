@@ -1,8 +1,33 @@
 import os
 import requests
 import time
+import json
+from typing import TypedDict, List
 
-def transcribe(audio_url):
+class Word(TypedDict):
+    word: str
+    start: float
+    end: float
+    score: float
+
+class TranscriptionSegment(TypedDict):
+    start: float
+    end: float
+    text: str
+    words: List[Word]
+
+def transcribe(audio_url, dir_name):
+    try: 
+        with open(dir_name + "/transcription.txt", "r") as f:
+            print('Transcription file already exists')
+            transcription_text = f.read()
+        with open(dir_name + "/transcription.json", "r") as f:
+            transcription: List[TranscriptionSegment] = json.load(f)
+
+        return transcription_text, transcription
+    except FileNotFoundError:
+        pass
+
     print('Transcribing audio')
     response = requests.post(
         f"{os.getenv('MODAL_TRANSCRIBE_URL')}/transcribe",
@@ -20,15 +45,18 @@ def transcribe(audio_url):
         else:
             break
 
-    transcription = response.json()
+    transcription: List[TranscriptionSegment] = response.json()
     print(f'Transcription complete')
+
+    with open(dir_name + '/transcription.json', 'w') as f:
+        f.write(json.dumps(transcription))
 
     transcription_text = ""
     for item in transcription:
         transcription_text += f"{item['start']} - {item['end']}: {item['text']}\n"
     
-    with open('transcription.txt', 'w') as f:
+    with open(dir_name + '/transcription.txt', 'w') as f:
         f.write(transcription_text)
     print('Transcription saved to transcription.txt')
 
-    return transcription_text
+    return transcription_text, transcription

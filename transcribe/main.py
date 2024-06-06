@@ -24,7 +24,7 @@ def download_audio(url):
     else:
         raise Exception("Failed to download audio")
 
-@app.function(gpu='any', timeout=600)
+@app.function(gpu='any', timeout=1200)
 def transcribe(url, language=None):
     logger.info(f"Downloading audio from {url}")
     audio_path = download_audio(url)
@@ -38,12 +38,14 @@ def transcribe(url, language=None):
 
     logger.info("Transcribing audio")
 
-    result = whisper_model.transcribe(audio, chunk_size=15)
-
-    for segment in result["segments"]:
-        logger.info(f"{segment['start']} - {segment['end']}: {segment['text']}")
+    result = whisper_model.transcribe(audio)
 
     logger.info("Transcription completed")
+
+    alignment_model, metadata = whisperx.load_align_model(result["language"], device="cuda")
+    result = whisperx.align(result["segments"], alignment_model, metadata, audio, "cuda", return_char_alignments=False)
+
+    logger.info("Alignment completed")
 
     return result["segments"]
 

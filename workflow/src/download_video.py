@@ -1,11 +1,18 @@
 import yt_dlp
 
-def download_video(url):
+def download_video(url, dir_name):
+    try: 
+        with open(dir_name + '/video.mp4', 'r'):
+            print('Video already downloaded')
+            return dir_name + '/video.mp4'
+    except FileNotFoundError:
+        pass
+
     print(f'Downloading video from {url}')
     ydl_opts = {
         'format': 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best',
         'merge_output_format': 'mp4',
-        'outtmpl': 'video.%(ext)s',
+        'outtmpl': dir_name + '/' + 'video.%(ext)s',
         'addmetadata': True
     }
 
@@ -13,4 +20,4 @@ def download_video(url):
         ydl.download([url])
     print('Download complete')
 
-    return 'video.mp4'
+    return dir_name + '/video.mp4'
