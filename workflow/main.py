@@ -20,7 +20,8 @@ load_dotenv()
 @click.command()
 @click.option('--url', help='URL of the video to download')
 @click.option('--orientation', help='Orientation of the video', default='landscape', type=click.Choice(['landscape', 'portrait']))
-def main(url, orientation):
+@click.option('--manual-ai', help='Stop workflow for manual AI (gemini) processing', is_flag=True)
+def main(url, orientation, manual_ai):
     dir_name = f"tmp/{str(uuid.uuid3(uuid.NAMESPACE_URL, url))}"
     os.makedirs(dir_name, exist_ok=True)
 
@@ -32,7 +33,7 @@ def main(url, orientation):
 
     transcription_text, transcription_json = transcribe(audio_url, dir_name)
 
-    moments = process_transcription(transcription_text, dir_name)
+    moments = process_transcription(transcription_text, dir_name, manual_ai)
 
     color = get_random_color(dir_name)
 
