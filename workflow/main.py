@@ -33,7 +33,7 @@ def main(url, orientation, manual_ai):
 
     transcription_text, transcription_json = transcribe(audio_url, dir_name)
 
-    moments = process_transcription(transcription_text, dir_name, manual_ai)
+    moments = process_transcription(transcription_text, dir_name, manual_ai, orientation)
 
     color = get_random_color(dir_name)
 
