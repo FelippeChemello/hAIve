@@ -1,5 +1,6 @@
 import logging
 import sys
+import os
 import fastapi
 from modal.functions import FunctionCall
 from modal import asgi_app
@@ -25,16 +26,11 @@ def download_audio(url):
         raise Exception("Failed to download audio")
 
 @app.function(gpu='any', timeout=1200)
-def transcribe(url, language=None):
-    logger.info(f"Downloading audio from {url}")
-    audio_path = download_audio(url)
-    logger.info(f"Downloaded audio to {audio_path}")
-
+def transcribe(audio, language=None):
     logger.info(f"Starting Transcription processing")
     import whisperx
 
     whisper_model = whisperx.load_model(pretained_whisper_model, device="cuda", compute_type="float16", language=language)
-    audio = whisperx.load_audio(audio_path)
 
     logger.info("Transcribing audio")
 
@@ -52,13 +48,30 @@ def transcribe(url, language=None):
 @app.function()
 @web_app.post("/transcribe")
 async def create_transcription_job(request: fastapi.Request):
-    data = await request.json()
-    url = data["url"]
+    data = await request.json() if request.headers.get("content-type") == "application/json" else await request.form()
+    
+    url = data.get("url", None)
+    audio_file = data.get("audio", None)
     language = data.get("language", None)
 
-    print(f"Transcribing {url} with language {language}")
+    if url:
+        logger.info(f"Downloading audio from {url}")
+        audio_file_path = download_audio(url)
+        logger.info(f"Downloaded audio to {audio_file_path}")
+    elif audio_file:
+        audio_file_path = audio_file.filename
+        with open(audio_file_path, "wb") as f:
+            f.write(audio_file.file.read())
+    else:
+        raise Exception("No audio provided")
+    
 
-    job_id = transcribe.spawn(url, language)
+    print(f"Transcribing with language {language}")
+    
+    import whisperx
+    audio = whisperx.load_audio(audio_file_path)
+
+    job_id = transcribe.spawn(audio, language)
 
     return fastapi.responses.JSONResponse({"job_id": job_id.object_id})
     

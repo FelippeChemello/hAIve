@@ -1,4 +1,4 @@
-from modal import App, Volume, Image
+from modal import App, Image, Volume, NetworkFileSystem
 import fastapi
 
 pretained_whisper_model = "/models/whisper"
@@ -22,6 +22,7 @@ imageApp = (
         "torchaudio",
         "git+https://github.com/m-bain/whisperx.git",
         "requests",
+        "python-multipart",
     )
     .run_function(download_whisper_model)
 )
